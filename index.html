@@ -1,2491 +1,2499 @@
 <!DOCTYPE html>
 <html>
-  
+
   <head>
-    <link rel="stylesheet" href="style.css">
-    <link href="//vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
-    <script src="//vjs.zencdn.net/7.0/video.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="//vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/7.0/video.min.js"></script>
   </head>
-  
+
   <body>
 
-    <script>
-      function openTab(evt, tabName) {
-	  // Declare all variables
-	  var i, tabcontent, tablinks;
-	  var alreadyActive = false;
-	  
-	  // closes tab if already active
-	  if (document.getElementById(tabName).style.display == "block")
-	  {
-	      alreadyActive = true;
+	<script>
+	  function openTab(evt, tabName) {
+		  // Declare all variables
+		  var i, tabcontent, tablinks;
+		  var alreadyActive = false;
+
+		  // closes tab if already active
+		  if (document.getElementById(tabName).style.display == "block")
+		  {
+			  alreadyActive = true;
+		  }
+
+		  // Get all elements with class="tabcontent" and hide them
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			  tabcontent[i].style.display = "none";
+		  }
+
+		  // Get all elements with class="tablinks" and remove the class "active"
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			  tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+
+		  if (!alreadyActive)
+		  {
+			  // Show the current tab, and add an "active" class to the button that opened the tab
+			  document.getElementById(tabName).style.display = "block";
+			  evt.currentTarget.className += " active";
+
+			  document.getElementById(tabName).scrollIntoView();
+		  }
 	  }
-	  
-	  // Get all elements with class="tabcontent" and hide them
-	  tabcontent = document.getElementsByClassName("tabcontent");
-	  for (i = 0; i < tabcontent.length; i++) {
-	      tabcontent[i].style.display = "none";
-	  }
-	  
-	  // Get all elements with class="tablinks" and remove the class "active"
-	  tablinks = document.getElementsByClassName("tablinks");
-	  for (i = 0; i < tablinks.length; i++) {
-	      tablinks[i].className = tablinks[i].className.replace(" active", "");
-	  }
-	  
-	  if (!alreadyActive)
-	  {
-	      // Show the current tab, and add an "active" class to the button that opened the tab
-	      document.getElementById(tabName).style.display = "block";
-	      evt.currentTarget.className += " active";
-	      
-	      document.getElementById(tabName).scrollIntoView();
-	  }
-      }
-    </script>
-    
-    <center>
-      <h1><em>In Memory of All Those Who've Perished,<br>But Whose Spirits Live On</em></h1>
-
-      <!-- <div id="broadcast"> -->
-      <!--   <h3> -->
-      <!--     Goodnight, Normy<br>You Were A Fighter All Your Life<br>And Now You May Rest<br><br> -->
-      <!--     Goodnight, Normy<br>I'll Sleep Right Beside You<br>Hugging You Close To My Chest<br><br> -->
-      <!--     Goodnight, Normy<br>Do You Remember Pixel?<br>You'll Now Be With Him<br><br> -->
-      <!--     Goodnight, Normy<br>Sleep Tight, And Forever<br>We'll See You In Heaven -->
-      <!--   </h3> -->
-      <!-- </div> -->
-
-      <!-- <div id="broadcast" style="width:1040px"> -->
-      <!--   <div width="1100"> -->
-      <!--     <img src="images/fireworks.gif" /> -->
-      <!--     <img src="images/fireworks.gif" /> -->
-      <!--     <img src="images/fireworks.gif" /> -->
-      <!--   </div> -->
-      <!--   <img src="images/ruchi_birthday_2021.png" width="1000" /> -->
-      <!--   <div width="1100"> -->
-      <!--     <img src="images/fireworks.gif" /> -->
-      <!--     <img src="images/fireworks.gif" /> -->
-      <!--     <img src="images/fireworks.gif" /> -->
-      <!--   </div> -->
-      <!-- </div> -->
-      
-      <img class="portrait" height="500" width="400" src="images/homepage_pixel.jpg" alt="Buddy" />
-      <img class="portrait" height="500" width="550" src="images/homepage_normy.jpg" alt="Normy" />
-      <img class="portrait" height="300" width="400" src="images/homepage_alfie_eddie.jpg" alt="AlfieEddie" />
-      
-      <h3><bf><em>You were the lights that shone in our lives</em></bf></h3>
-    </center>
-    
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event,'Pixel')">Pixel</button>
-      <button class="tablinks" onclick="openTab(event,'Norman')">Norman</button>
-      <button class="tablinks" onclick="openTab(event,'Alfie')">Alfie</button>
-      <button class="tablinks" onclick="openTab(event,'Eddie')">Eddie</button>
-      <button class="tablinks" onclick="openTab(event,'Specs')">Specs</button>
-      <div class="inMemoriam">
-	<button class="tablinks" onclick="openTab(event,'In Memoriam')"><font color="black"><i>In Memoriam</i></font></button>
-      </div>
-      <div class="rightTab">
-        <button class="tablinks" onclick="openTab(event,'Memories')">Memories</button>
-      </div>
-      <div class="rightTab">
-        <button class="tablinks" onclick="openTab(event,'Videos')">Videos</button>
-      </div>
-    </div>
-    
-    <div id="Pixel" class="tabcontent">
-      <h2>Rest In Peace, Buddy</h2>
-      <h3><i>(July 1st, 2002 - June 19th, 2017)</i></h3>
-
-      <div class="container">
-	
-	<a target="_blank" href="images/pixel01.jpg">
-	  <img src="images/pixel01.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel02.jpg">
-	  <img src="images/pixel02.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel03.jpg">
-	  <img src="images/pixel03.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel04.jpg">
-	  <img src="images/pixel04.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel05.jpg">
-	  <img src="images/pixel05.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel06.jpg">
-	  <img src="images/pixel06.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel07.jpg">
-	  <img src="images/pixel07.jpg" style="width:31%; height:calc(100vw * 0.563)">
-	</a>
-	<a target="_blank" href="images/pixel08.jpg">
-	  <img src="images/pixel08.jpg" style="width:31%; height:calc(100vw * 0.563)">
-	</a>
-	<a target="_blank" href="images/pixel09.jpg">
-	  <img src="images/pixel09.jpg" style="width:31%; height:calc(100vw * 0.563)">
-	</a>
-	
-	<a target="_blank" href="images/pixel10.jpg">
-	  <img src="images/pixel10.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel11.jpg">
-	  <img src="images/pixel11.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel12.jpg">
-	  <img src="images/pixel12.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel13.jpg">
-	  <img src="images/pixel13.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel14.jpg">
-	  <img src="images/pixel14.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel15.jpg">
-	  <img src="images/pixel15.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel16.jpg">
-	  <img src="images/pixel16.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel17.jpg">
-	  <img src="images/pixel17.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel18.jpg">
-	  <img src="images/pixel18.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel19.jpg">
-	  <img src="images/pixel19.jpg" style="width:31%; height:calc(100vw * 0.32)">
-	</a>
-	<a target="_blank" href="images/pixel20.jpg">
-	  <img src="images/pixel20.jpg" style="width:31%; height:calc(100vw * 0.32)">
-	</a>
-	<a target="_blank" href="images/pixel21.jpg">
-	  <img src="images/pixel21.jpg" style="width:31%; height:calc(100vw * 0.32)">
-	</a>
-	
-	<a target="_blank" href="images/pixel22.jpg">
-	  <img src="images/pixel22.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel23.jpg">
-	  <img src="images/pixel23.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel24.jpg">
-	  <img src="images/pixel24.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel25.jpg">
-	  <img src="images/pixel25.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel26.jpg">
-	  <img src="images/pixel26.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel27.jpg">
-	  <img src="images/pixel27.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel28.jpg">
-	  <img src="images/pixel28.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel29.jpg">
-	  <img src="images/pixel29.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel30.jpg">
-	  <img src="images/pixel30.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel31.jpg">
-	  <img src="images/pixel31.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel32.jpg">
-	  <img src="images/pixel32.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel33.jpg">
-	  <img src="images/pixel33.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel34.jpg">
-	  <img src="images/pixel34.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel35.jpg">
-	  <img src="images/pixel35.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel36.jpg">
-	  <img src="images/pixel36.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel37.jpg">
-	  <img src="images/pixel37.jpg" style="width:31%; height:calc(100vw * 0.423)">
-	</a>
-	<a target="_blank" href="images/pixel38.jpg">
-	  <img src="images/pixel38.jpg" style="width:31%; height:calc(100vw * 0.423)">
-	</a>
-	<a target="_blank" href="images/pixel39.jpg">
-	  <img src="images/pixel39.jpg" style="width:31%; height:calc(100vw * 0.423)">
-	</a>
-	
-	<a target="_blank" href="images/pixel40.jpg">
-	  <img src="images/pixel40.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel41.jpg">
-	  <img src="images/pixel41.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel42.jpg">
-	  <img src="images/pixel42.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel43.jpg">
-	  <img src="images/pixel43.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel44.jpg">
-	  <img src="images/pixel44.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel45.jpg">
-	  <img src="images/pixel45.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel46.jpg">
-	  <img src="images/pixel46.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel47.jpg">
-	  <img src="images/pixel47.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel48.jpg">
-	  <img src="images/pixel48.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel49.jpg">
-	  <img src="images/pixel49.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel50.jpg">
-	  <img src="images/pixel50.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel51.jpg">
-	  <img src="images/pixel51.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel52.jpg">
-	  <img src="images/pixel52.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel53.jpg">
-	  <img src="images/pixel53.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel54.jpg">
-	  <img src="images/pixel54.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel55.jpg">
-	  <img src="images/pixel55.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel56.jpg">
-	  <img src="images/pixel56.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel57.jpg">
-	  <img src="images/pixel57.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel58.jpg">
-	  <img src="images/pixel58.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel59.jpg">
-	  <img src="images/pixel59.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel60.jpg">
-	  <img src="images/pixel60.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel61.jpg">
-	  <img src="images/pixel61.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel62.jpg">
-	  <img src="images/pixel62.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel63.jpg">
-	  <img src="images/pixel63.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel64.jpg">
-	  <img src="images/pixel64.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel65.jpg">
-	  <img src="images/pixel65.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel66.jpg">
-	  <img src="images/pixel66.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel67.jpg">
-	  <img src="images/pixel67.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel68.jpg">
-	  <img src="images/pixel68.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel69.jpg">
-	  <img src="images/pixel69.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel70.jpg">
-	  <img src="images/pixel70.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel71.jpg">
-	  <img src="images/pixel71.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel72.jpg">
-	  <img src="images/pixel72.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel73.jpg">
-	  <img src="images/pixel73.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel74.jpg">
-	  <img src="images/pixel74.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel75.jpg">
-	  <img src="images/pixel75.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel76.jpg">
-	  <img src="images/pixel76.jpg" style="width:31%; height:calc(100vw * 0.24)">
-	</a>
-	<a target="_blank" href="images/pixel77.jpg">
-	  <img src="images/pixel77.jpg" style="width:31%; height:calc(100vw * 0.24)">
-	</a>
-	<a target="_blank" href="images/pixel78.jpg">
-	  <img src="images/pixel78.jpg" style="width:31%; height:calc(100vw * 0.24)">
-	</a>
-	
-	<a target="_blank" href="images/pixel79.jpg">
-	  <img src="images/pixel79.jpg" style="width:31%; height:calc(100vw * 0.24)">
-	</a>
-	<a target="_blank" href="images/pixel80.jpg">
-	  <img src="images/pixel80.jpg" style="width:31%; height:calc(100vw * 0.24)">
-	</a>
-	<a target="_blank" href="images/pixel81.jpg">
-	  <img src="images/pixel81.jpg" style="width:31%; height:calc(100vw * 0.24)">
-	</a>
-	
-	<a target="_blank" href="images/pixel82.jpg">
-	  <img src="images/pixel82.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel83.jpg">
-	  <img src="images/pixel83.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel84.jpg">
-	  <img src="images/pixel84.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel85.jpg">
-	  <img src="images/pixel85.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel86.jpg">
-	  <img src="images/pixel86.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel87.jpg">
-	  <img src="images/pixel87.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel88.jpg">
-	  <img src="images/pixel88.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel89.jpg">
-	  <img src="images/pixel89.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel90.jpg">
-	  <img src="images/pixel90.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel91.jpg">
-	  <img src="images/pixel91.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel92.jpg">
-	  <img src="images/pixel92.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel93.jpg">
-	  <img src="images/pixel93.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel94.jpg">
-	  <img src="images/pixel94.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel95.jpg">
-	  <img src="images/pixel95.jpg" style="width:31%">
-	</a>
-	<a target="_blank" href="images/pixel96.jpg">
-	  <img src="images/pixel96.jpg" style="width:31%">
-	</a>
-	
-	<a target="_blank" href="images/pixel97.jpg">
-	  <img src="images/pixel97.jpg" style="width:60%">
-	</a>
-	<p style="font-size:5em; float:right"><em>Rest In<br>Peace...</em></p>
-	
-      </div>
-    </div>
-    
-    <div id="Norman" class="tabcontent">
-      <h2>Rest In Peace, Normy</h2>
-      <h3><i>(June 31st, 2013 - August 25th, 2021)</i></h3>
-      
-      <a target="_blank" href="images/normy001.jpg">
-	<img src="images/normy001.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy002.jpg">
-	<img src="images/normy002.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy003.jpg">
-	<img src="images/normy003.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy004.jpg">
-	<img src="images/normy004.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy005.jpg">
-	<img src="images/normy005.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy006.jpg">
-	<img src="images/normy006.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy007.jpg">
-	<img src="images/normy007.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy008.jpg">
-	<img src="images/normy008.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy009.jpg">
-	<img src="images/normy009.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy010.jpg">
-	<img src="images/normy010.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy011.jpg">
-	<img src="images/normy011.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy012.jpg">
-	<img src="images/normy012.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy013.jpg">
-	<img src="images/normy013.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy014.jpg">
-	<img src="images/normy014.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy015.jpg">
-	<img src="images/normy015.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy016.jpg">
-	<img src="images/normy016.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy017.jpg">
-	<img src="images/normy017.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy018.jpg">
-	<img src="images/normy018.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy019.jpg">
-        <img src="images/normy019.jpg" style="width:33%; height:calc(100vw * 0.4)">
-      </a>
-      <a target="_blank" href="images/normy020.jpg">
-        <img src="images/normy020.jpg" style="width:33%; height:calc(100vw * 0.4)">
-      </a>
-      <a target="_blank" href="images/normy021.jpg">
-        <img src="images/normy021.jpg" style="width:33%; height:calc(100vw * 0.4)">
-      </a>
-
-      <a target="_blank" href="images/normy022.jpg">
-        <img src="images/normy022.jpg" style="width:33%; height:calc(100vw * 0.4)">
-      </a>
-      <a target="_blank" href="images/normy023.jpg">
-        <img src="images/normy023.jpg" style="width:33%; height:calc(100vw * 0.4)">
-      </a>
-      <a target="_blank" href="images/normy024.jpg">
-        <img src="images/normy024.jpg" style="width:33%; height:calc(100vw * 0.4)">
-      </a>
-
-      <a target="_blank" href="images/normy025.jpg">
-	<img src="images/normy025.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy026.jpg">
-	<img src="images/normy026.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy027.jpg">
-	<img src="images/normy027.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy028.jpg">
-	<img src="images/normy028.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy029.jpg">
-	<img src="images/normy029.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy030.jpg">
-	<img src="images/normy030.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy031.jpg">
-	<img src="images/normy031.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy032.jpg">
-	<img src="images/normy032.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy033.jpg">
-	<img src="images/normy033.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy034.jpg">
-	<img src="images/normy034.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy035.jpg">
-	<img src="images/normy035.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy036.jpg">
-	<img src="images/normy036.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy037.jpg">
-	<img src="images/normy037.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy038.jpg">
-	<img src="images/normy038.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy039.jpg">
-	<img src="images/normy039.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy040.jpg">
-	<img src="images/normy040.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy041.jpg">
-	<img src="images/normy041.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy042.jpg">
-	<img src="images/normy042.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy043.jpg">
-	<img src="images/normy043.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy044.jpg">
-	<img src="images/normy044.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy045.jpg">
-	<img src="images/normy045.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy046.jpg">
-	<img src="images/normy046.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy047.jpg">
-	<img src="images/normy047.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy048.jpg">
-	<img src="images/normy048.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy049.jpg">
-	<img src="images/normy049.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy050.jpg">
-	<img src="images/normy050.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy051.jpg">
-	<img src="images/normy051.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy052.jpg">
-	<img src="images/normy052.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy053.jpg">
-	<img src="images/normy053.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy054.jpg">
-	<img src="images/normy054.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy055.jpg">
-        <img src="images/normy055.jpg" style="width:33%; height:calc(100vw * 0.43)">
-      </a>
-      <a target="_blank" href="images/normy056.jpg">
-        <img src="images/normy056.jpg" style="width:33%; height:calc(100vw * 0.43)">
-      </a>
-      <a target="_blank" href="images/normy057.jpg">
-        <img src="images/normy057.jpg" style="width:33%; height:calc(100vw * 0.43)">
-      </a>
-
-      <a target="_blank" href="images/normy058.jpg">
-	<img src="images/normy058.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy059.jpg">
-	<img src="images/normy059.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy060.jpg">
-	<img src="images/normy060.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy061.jpg">
-	<img src="images/normy061.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy062.jpg">
-	<img src="images/normy062.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy063.jpg">
-	<img src="images/normy063.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy064.jpg">
-	<img src="images/normy064.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy065.jpg">
-	<img src="images/normy065.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy066.jpg">
-	<img src="images/normy066.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy067.jpg">
-	<img src="images/normy067.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy068.jpg">
-	<img src="images/normy068.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy069.jpg">
-	<img src="images/normy069.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy070.jpg">
-	<img src="images/normy070.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy071.jpg">
-	<img src="images/normy071.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy072.jpg">
-	<img src="images/normy072.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy073.jpg">
-	<img src="images/normy073.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy074.jpg">
-	<img src="images/normy074.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy075.jpg">
-	<img src="images/normy075.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy076.jpg">
-	<img src="images/normy076.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy077.jpg">
-	<img src="images/normy077.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy078.jpg">
-	<img src="images/normy078.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy079.jpg">
-	<img src="images/normy079.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy080.jpg">
-	<img src="images/normy080.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy081.jpg">
-	<img src="images/normy081.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy082.jpg">
-	<img src="images/normy082.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy083.jpg">
-	<img src="images/normy083.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy084.jpg">
-	<img src="images/normy084.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy085.jpg">
-	<img src="images/normy085.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy086.jpg">
-	<img src="images/normy086.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy087.jpg">
-	<img src="images/normy087.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy088.jpg">
-	<img src="images/normy088.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy089.jpg">
-	<img src="images/normy089.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy090.jpg">
-	<img src="images/normy090.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy091.jpg">
-	<img src="images/normy091.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy092.jpg">
-	<img src="images/normy092.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy093.jpg">
-	<img src="images/normy093.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy094.jpg">
-	<img src="images/normy094.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy095.jpg">
-	<img src="images/normy095.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy096.jpg">
-	<img src="images/normy096.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy097.jpg">
-	<img src="images/normy097.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy098.jpg">
-	<img src="images/normy098.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy099.jpg">
-	<img src="images/normy099.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy100.jpg">
-	<img src="images/normy100.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy101.jpg">
-	<img src="images/normy101.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy102.jpg">
-	<img src="images/normy102.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy103.jpg">
-	<img src="images/normy103.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy104.jpg">
-	<img src="images/normy104.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy105.jpg">
-	<img src="images/normy105.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy106.jpg">
-	<img src="images/normy106.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy107.jpg">
-	<img src="images/normy107.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy108.jpg">
-	<img src="images/normy108.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy109.jpg">
-	<img src="images/normy109.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy110.jpg">
-	<img src="images/normy110.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy111.jpg">
-	<img src="images/normy111.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy112.jpg">
-	<img src="images/normy112.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy113.jpg">
-	<img src="images/normy113.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy114.jpg">
-	<img src="images/normy114.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy115.jpg">
-	<img src="images/normy115.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy116.jpg">
-	<img src="images/normy116.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy117.jpg">
-	<img src="images/normy117.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy118.jpg">
-	<img src="images/normy118.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy119.jpg">
-	<img src="images/normy119.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy120.jpg">
-	<img src="images/normy120.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy121.jpg">
-	<img src="images/normy121.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy122.jpg">
-	<img src="images/normy122.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy123.jpg">
-	<img src="images/normy123.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy124.jpg">
-	<img src="images/normy124.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy125.jpg">
-	<img src="images/normy125.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy126.jpg">
-	<img src="images/normy126.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy127.jpg">
-	<img src="images/normy127.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy128.jpg">
-	<img src="images/normy128.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy129.jpg">
-	<img src="images/normy129.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy130.jpg">
-	<img src="images/normy130.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy131.jpg">
-	<img src="images/normy131.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy132.jpg">
-	<img src="images/normy132.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy133.jpg">
-	<img src="images/normy133.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy134.jpg">
-	<img src="images/normy134.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy135.jpg">
-	<img src="images/normy135.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy136.jpg">
-	<img src="images/normy136.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy137.jpg">
-	<img src="images/normy137.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy138.jpg">
-	<img src="images/normy138.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy139.jpg">
-	<img src="images/normy139.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy140.jpg">
-	<img src="images/normy140.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy141.jpg">
-	<img src="images/normy141.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy142.jpg">
-	<img src="images/normy142.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy143.jpg">
-	<img src="images/normy143.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy144.jpg">
-	<img src="images/normy144.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy145.jpg">
-	<img src="images/normy145.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy146.jpg">
-	<img src="images/normy146.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy147.jpg">
-	<img src="images/normy147.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy148.jpg">
-	<img src="images/normy148.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy149.jpg">
-	<img src="images/normy149.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy150.jpg">
-	<img src="images/normy150.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy151.jpg">
-	<img src="images/normy151.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy152.jpg">
-	<img src="images/normy152.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy153.jpg">
-	<img src="images/normy153.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy154.jpg">
-	<img src="images/normy154.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy155.jpg">
-	<img src="images/normy155.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy156.jpg">
-	<img src="images/normy156.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy157.jpg">
-	<img src="images/normy157.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy158.jpg">
-	<img src="images/normy158.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy159.jpg">
-	<img src="images/normy159.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy160.jpg">
-	<img src="images/normy160.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy161.jpg">
-	<img src="images/normy161.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy162.jpg">
-	<img src="images/normy162.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy163.jpg">
-	<img src="images/normy163.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy164.jpg">
-	<img src="images/normy164.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy165.jpg">
-	<img src="images/normy165.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy166.jpg">
-	<img src="images/normy166.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy167.jpg">
-	<img src="images/normy167.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy168.jpg">
-	<img src="images/normy168.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy169.jpg">
-	<img src="images/normy169.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy170.jpg">
-	<img src="images/normy170.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy171.jpg">
-	<img src="images/normy171.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy172.jpg">
-	<img src="images/normy172.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy173.jpg">
-	<img src="images/normy173.jpg" style="width:33%">
-      </a>
-      <a target="_blank" href="images/normy174.jpg">
-	<img src="images/normy174.jpg" style="width:33%">
-      </a>
-
-      <a target="_blank" href="images/normy_letter01.jpg">
-        <img src="images/normy_letter01.jpg" style="width:33%; height:calc(100vw * 0.5)">
-      </a>
-      <a target="_blank" href="images/normy_letter02.jpg">
-        <img src="images/normy_letter02.jpg" style="width:66%; height:calc(100vw * 0.5)">
-      </a>
-
-      <a target="_blank" href="images/normy_mspca_letter01.jpg">
-        <img src="images/normy_mspca_letter01.jpg" style="width:33%; height:calc(100vw * 0.3)">
-      </a>
-      <a target="_blank" href="images/normy_mspca_letter02.jpg">
-        <img src="images/normy_mspca_letter02.jpg" style="width:33%; height:calc(100vw * 0.3)">
-      </a>
-      <a target="_blank" href="images/normy_mspca_letter03.jpg">
-        <img src="images/normy_mspca_letter03.jpg" style="width:33%; height:calc(100vw * 0.3)">
-      </a>
-      
-    </div>
-
-    <div id="Alfie" class="tabcontent">
-
-      <h1>Dear Aflie,</h1><h3><em>(September 2018 - February 6th, 2021)</em></h3>
-      <p style="font-size:2em"><em>I love you, Alfie. You were a sweet angel, who fought through the death of your brother and an unfortunate skin condition. Despite all this, you were a happy and gentle boy. May you forever Rest In Peace.</em></p>
-
-      <div class="container">
-	
-	<a target="_blank" href="images/alfie01.jpg">
-	  <img src="images/alfie01.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/alfie02.jpg">
-	  <img src="images/alfie02.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/alfie03.jpg">
-	  <img src="images/alfie03.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/alfie04.jpg">
-	  <img src="images/alfie04.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/alfie05.jpg">
-	  <img src="images/alfie05.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/alfie06.jpg">
-	  <img src="images/alfie06.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/alfie07.jpg">
-	  <img src="images/alfie07.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/alfie08.jpg">
-	  <img src="images/alfie08.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/alfie09.jpg">
-	  <img src="images/alfie09.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/alfie10.jpg">
-	  <img src="images/alfie10.jpg" style="width:49.7%">
-	</a>
-	<a target="_blank" href="images/alfie11.jpg">
-	  <img src="images/alfie11.jpg" style="width:49.7%">
-	</a>
-
-      </div>
-    </div>
-    
-    <div id="Eddie" class="tabcontent">
-
-      <h1>Dear Eddie,</h1><h3><em>(September 2018 - October 12th, 2020)</em></h3>
-      <p style="font-size:2em"><em>Goodbye, my sweet boy. You were a little over two years old. I am glad to know that you passed peacefully in your sleep, with your brother right there, comforting you. I love you unimaginably so and you made my life brighter. Like losing any pet, it is like losing a family member, a very dear one who never gets angry at you and is always there for you. I will miss you Eddie. Rest in Peace.</em></p>
-
-      <div class="container">
-	
-	<a target="_blank" href="images/eddie01.jpg">
-	  <img src="images/eddie01.jpg" style="width:33%; height:calc(100vw * 0.587)">
-	</a>
-	<a target="_blank" href="images/eddie02.jpg">
-	  <img src="images/eddie02.jpg" style="width:33%; height:calc(100vw * 0.587)">
-	</a>
-	<a target="_blank" href="images/eddie03.jpg">
-	  <img src="images/eddie03.jpg" style="width:33%; height:calc(100vw * 0.587)">
-	</a>
-
-	<a target="_blank" href="images/eddie04.jpg">
-	  <img src="images/eddie04.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/eddie05.jpg">
-	  <img src="images/eddie05.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/eddie06.jpg">
-	  <img src="images/eddie06.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/eddie07.jpg">
-	  <img src="images/eddie07.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/eddie08.jpg">
-	  <img src="images/eddie08.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/eddie09.jpg">
-	  <img src="images/eddie09.jpg" style="width:33%">
-	</a>
-
-      </div>
-    </div>
-
-    <div id="Specs" class="tabcontent">
-
-      <h1>R.I.P. Specs</h1><h3><em>(d. March 9th, 2022)</em></h3>
-
-      <div class="container">
-	
-	<a target="_blank" href="images/specs001.jpg">
-	  <img src="images/specs001.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs002.jpg">
-	  <img src="images/specs002.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs003.jpg">
-	  <img src="images/specs003.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs004.jpg">
-	  <img src="images/specs004.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs005.jpg">
-	  <img src="images/specs005.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs006.jpg">
-	  <img src="images/specs006.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs007.jpg">
-	  <img src="images/specs007.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs008.jpg">
-	  <img src="images/specs008.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs009.jpg">
-	  <img src="images/specs009.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs010.jpg">
-	  <img src="images/specs010.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs011.jpg">
-	  <img src="images/specs011.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs012.jpg">
-	  <img src="images/specs012.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs013.jpg">
-	  <img src="images/specs013.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs014.jpg">
-	  <img src="images/specs014.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs015.jpg">
-	  <img src="images/specs015.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs016.jpg">
-	  <img src="images/specs016.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs017.jpg">
-	  <img src="images/specs017.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs018.jpg">
-	  <img src="images/specs018.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs019.jpg">
-	  <img src="images/specs019.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs020.jpg">
-	  <img src="images/specs020.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs021.jpg">
-	  <img src="images/specs021.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs022.jpg">
-	  <img src="images/specs022.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs023.jpg">
-	  <img src="images/specs023.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs024.jpg">
-	  <img src="images/specs024.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs025.jpg">
-	  <img src="images/specs025.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs026.jpg">
-	  <img src="images/specs026.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs027.jpg">
-	  <img src="images/specs027.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs028.jpg">
-	  <img src="images/specs028.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs029.jpg">
-	  <img src="images/specs029.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs030.jpg">
-	  <img src="images/specs030.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs031.jpg">
-	  <img src="images/specs031.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs032.jpg">
-	  <img src="images/specs032.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs033.jpg">
-	  <img src="images/specs033.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs034.jpg">
-	  <img src="images/specs034.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs035.jpg">
-	  <img src="images/specs035.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs036.jpg">
-	  <img src="images/specs036.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs037.jpg">
-	  <img src="images/specs037.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs038.jpg">
-	  <img src="images/specs038.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs039.jpg">
-	  <img src="images/specs039.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs040.jpg">
-	  <img src="images/specs040.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs041.jpg">
-	  <img src="images/specs041.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs042.jpg">
-	  <img src="images/specs042.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs043.jpg">
-	  <img src="images/specs043.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs044.jpg">
-	  <img src="images/specs044.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs045.jpg">
-	  <img src="images/specs045.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs046.jpg">
-	  <img src="images/specs046.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs047.jpg">
-	  <img src="images/specs047.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs048.jpg">
-	  <img src="images/specs048.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs049.jpg">
-	  <img src="images/specs049.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs050.jpg">
-	  <img src="images/specs050.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs051.jpg">
-	  <img src="images/specs051.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs052.jpg">
-	  <img src="images/specs052.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs053.jpg">
-	  <img src="images/specs053.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs054.jpg">
-	  <img src="images/specs054.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs055.jpg">
-	  <img src="images/specs055.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs056.jpg">
-	  <img src="images/specs056.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs057.jpg">
-	  <img src="images/specs057.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs058.jpg">
-	  <img src="images/specs058.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs059.jpg">
-	  <img src="images/specs059.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs060.jpg">
-	  <img src="images/specs060.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs061.jpg">
-	  <img src="images/specs061.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs062.jpg">
-	  <img src="images/specs062.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs063.jpg">
-	  <img src="images/specs063.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs064.jpg">
-	  <img src="images/specs064.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs065.jpg">
-	  <img src="images/specs065.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs066.jpg">
-	  <img src="images/specs066.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs067.jpg">
-	  <img src="images/specs067.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs068.jpg">
-	  <img src="images/specs068.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs069.jpg">
-	  <img src="images/specs069.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs070.jpg">
-	  <img src="images/specs070.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs071.jpg">
-	  <img src="images/specs071.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs072.jpg">
-	  <img src="images/specs072.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs073.jpg">
-	  <img src="images/specs073.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs074.jpg">
-	  <img src="images/specs074.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs075.jpg">
-	  <img src="images/specs075.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs076.jpg">
-	  <img src="images/specs076.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs077.jpg">
-	  <img src="images/specs077.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs078.jpg">
-	  <img src="images/specs078.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs079.jpg">
-	  <img src="images/specs079.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs080.jpg">
-	  <img src="images/specs080.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs081.jpg">
-	  <img src="images/specs081.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs082.jpg">
-	  <img src="images/specs082.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs083.jpg">
-	  <img src="images/specs083.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs084.jpg">
-	  <img src="images/specs084.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs085.jpg">
-	  <img src="images/specs085.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs086.jpg">
-	  <img src="images/specs086.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs087.jpg">
-	  <img src="images/specs087.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs088.jpg">
-	  <img src="images/specs088.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs089.jpg">
-	  <img src="images/specs089.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs090.jpg">
-	  <img src="images/specs090.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs091.jpg">
-	  <img src="images/specs091.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs092.jpg">
-	  <img src="images/specs092.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs093.jpg">
-	  <img src="images/specs093.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs094.jpg">
-	  <img src="images/specs094.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs095.jpg">
-	  <img src="images/specs095.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs096.jpg">
-	  <img src="images/specs096.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs097.jpg">
-	  <img src="images/specs097.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs098.jpg">
-	  <img src="images/specs098.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs099.jpg">
-	  <img src="images/specs099.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs100.jpg">
-	  <img src="images/specs100.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs101.jpg">
-	  <img src="images/specs101.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs102.jpg">
-	  <img src="images/specs102.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs103.jpg">
-	  <img src="images/specs103.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs104.jpg">
-	  <img src="images/specs104.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs105.jpg">
-	  <img src="images/specs105.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs106.jpg">
-	  <img src="images/specs106.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs107.jpg">
-	  <img src="images/specs107.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs108.jpg">
-	  <img src="images/specs108.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs109.jpg">
-	  <img src="images/specs109.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs110.jpg">
-	  <img src="images/specs110.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs111.jpg">
-	  <img src="images/specs111.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs112.jpg">
-	  <img src="images/specs112.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs113.jpg">
-	  <img src="images/specs113.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs114.jpg">
-	  <img src="images/specs114.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs115.jpg">
-	  <img src="images/specs115.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs116.jpg">
-	  <img src="images/specs116.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs117.jpg">
-	  <img src="images/specs117.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs118.jpg">
-	  <img src="images/specs118.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs119.jpg">
-	  <img src="images/specs119.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs120.jpg">
-	  <img src="images/specs120.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs121.jpg">
-	  <img src="images/specs121.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs122.jpg">
-	  <img src="images/specs122.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs123.jpg">
-	  <img src="images/specs123.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs124.jpg">
-	  <img src="images/specs124.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs125.jpg">
-	  <img src="images/specs125.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs126.jpg">
-	  <img src="images/specs126.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs127.jpg">
-	  <img src="images/specs127.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs128.jpg">
-	  <img src="images/specs128.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs129.jpg">
-	  <img src="images/specs129.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs130.jpg">
-	  <img src="images/specs130.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs131.jpg">
-	  <img src="images/specs131.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs132.jpg">
-	  <img src="images/specs132.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs133.jpg">
-	  <img src="images/specs133.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs134.jpg">
-	  <img src="images/specs134.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs135.jpg">
-	  <img src="images/specs135.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs136.jpg">
-	  <img src="images/specs136.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs137.jpg">
-	  <img src="images/specs137.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs138.jpg">
-	  <img src="images/specs138.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs139.jpg">
-	  <img src="images/specs139.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs140.jpg">
-	  <img src="images/specs140.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs141.jpg">
-	  <img src="images/specs141.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs142.jpg">
-	  <img src="images/specs142.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs143.jpg">
-	  <img src="images/specs143.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs144.jpg">
-	  <img src="images/specs144.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs145.jpg">
-	  <img src="images/specs145.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs146.jpg">
-	  <img src="images/specs146.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs147.jpg">
-	  <img src="images/specs147.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs148.jpg">
-	  <img src="images/specs148.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs149.jpg">
-	  <img src="images/specs149.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs150.jpg">
-	  <img src="images/specs150.jpg" style="width:33%">
-	</a>
-
-	<a target="_blank" href="images/specs151.jpg">
-	  <img src="images/specs151.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs152.jpg">
-	  <img src="images/specs152.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/specs153.jpg">
-	  <img src="images/specs153.jpg" style="width:33%">
-	</a>
-
-      </div>
-    </div>
-
-    <div id="Videos" class="tabcontent">
-      <div class="tab" style="width:235px">
-        <button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
-      </div>
-    </div>
-
-    <div id="Pixel Videos" class="tabcontent">
-      <div class="tab" style="width:235px">
-        <button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
-      </div>
-
-      <div class="container">
-	
-        <div class="videoAndTitleContainer">
-          <div>
-            <p class="videoTitle" style="float:left"><b>I observe stray cat</b></p>
-            <p class="videoTitle" style="float:right"><b>Enticing squirrel</b></p>
-          </div>
-          <div>
-            <video controls class="video" style="float:left">
-              <source src="videos/Pixel_observes_stray_cat.mp4" type="video/mp4">
-            </video>
-            <video controls class="video" style="float:right">
-              <source src="videos/Pixel_watches_squirrel.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Chilling...</b></p>
-	    <p class="videoTitle" style="float:right"><b>Dangerous balancing act</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Chilling_upstairs.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_balancing_act.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>I follow Niren</b></p>
-	    <p class="videoTitle" style="float:right"><b>I follow Rajat</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_follows_Niren.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_follows_Rajat.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>A gradual descent</b></p>
-	    <p class="videoTitle" style="float:right"><b>Some fun playtime</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_coming_down_stairwell.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_the_playful.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Settling into the basin</b></p>
-	    <p class="videoTitle" style="float:right"><b>My favorite activity</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Settling_into_the_basin.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixels_favorite_activity.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Playing with rubber band</b></p>
-	    <p class="videoTitle" style="float:right"><b>Chasing rubber bands</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_play.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_the_playful_yet_again.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>More rubber band fun</b></p>
-	    <p class="videoTitle" style="float:right"><b>My favorite green bag</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_play_again.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_on_his_green_bag.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>I CAUGHT IT!</b></p>
-	    <p class="videoTitle" style="float:right"><b>My failed backflip</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_catches_bait.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_slow_mo.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>I meet Normandy</b></p>
-	    <p class="videoTitle" style="float:right"><b>We meet again...</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_and_Norman_intro.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_and_Norman_meet_again.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>My friend Normy</b></p>
-	    <p class="videoTitle" style="float:right"><b>My beloved Norman</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_watching_normy.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_Norman_love.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>I just wanted to play...</b></p>
-	    <p class="videoTitle" style="float:right"><b>Tunnel Pt. 1: Exposition</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/More_pixel_normy_love.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_and_tunnel_play_(Part_I).mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Tunnel Pt. 2: Climax</b></p>
-	    <p class="videoTitle" style="float:right"><b>Tunnel Pt. 3: Resolution</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_and_tunnel_play_(Part_II).mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_and_tunnel_play_(Part_III).mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>The 'boss' walks in</b></p>
-	    <p class="videoTitle" style="float:right"><b>I 'love' my new toys</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Pixel_comes_across_norms.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Pixel_could_care_less_about_new_toys.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Deep into the woods</b></p>
-	    <p class="videoTitle" style="float:right"><b>Relaxing outside</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Exploring_the_world.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/Relaxing_outside.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer" style="margin-bottom:0">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>A trip to the hospital</b></p>
-	    <p class="videoTitle" style="float:right"><b>My last moments...</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/Playful_at_the_hospital.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/His_last_minutes_in_daddys_arms.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-	
-      </div>
-    </div>
-
-    <div id="Norman Videos" class="tabcontent">
-      <div class="tab" style="width:235px">
-        <button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
-      </div>
-
-      <div class="container">
-	
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Exploration Pt. 1: Scouting</b></p>
-	    <p class="videoTitle" style="float:right"><b>Exploration Pt. 2: Discovery</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy01_eager_exploration_part_1.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy01_eager_exploration_part_2.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Exploration Pt. 3: Consultation</b></p>
-	    <p class="videoTitle" style="float:right"><b>Exploration Pt. 4: Obstacle</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy01_eager_exploration_part_3.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy01_eager_exploration_part_4.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Exploration Pt. 5: Preparation</b></p>
-	    <p class="videoTitle" style="float:right"><b>Exploration Pt. 6: Attempt</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy01_eager_exploration_part_5.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy01_eager_exploration_part_6.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Exploration Pt. 7: Success</b></p>
-	    <p class="videoTitle" style="float:right"><b>Exploration Pt. 8: Homecoming</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy01_eager_exploration_part_7.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy01_eager_exploration_part_8.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Resting on Ruchi, my love</b></p>
-	    <p class="videoTitle" style="float:right"><b>Hmm, who is this?</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy01_resting_on_ruchi.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy01_who_is_this.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Out of my way!!!</b></p>
-	    <p class="videoTitle" style="float:right"><b>Can't you see I'm tryin' to eat here?!?</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy01_out_of_my_way.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy02_cant_you_see_im_tryin_to_eat_here.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Dramatic meal!</b></p>
-	    <p class="videoTitle" style="float:right"><b>Drinking water</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy02_dramatic_meal.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy02_drinking_water.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Sippin' water</b></p>
-	    <p class="videoTitle" style="float:right"><b>Nibbling on hay</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy02_sippin_water.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy02_nibbling_on_hay.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:right"><b>More sippin' water</b></p>
-	    <p class="videoTitle" style="float:left"><b>Just chillin'</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy02_more_sippin_water.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy02_just_chillin.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Hideout on ottoman</b></p>
-	    <p class="videoTitle" style="float:right"><b>Hideout on ottoman, contd.</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy02_hideout_on_ottoman.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy02_hideout_on_ottoman_contd.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Eating lettuce</b></p>
-	    <p class="videoTitle" style="float:right"><b>Head tilt won't stop me!</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy03_eating_lettuce.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy03_head_tilt_wont_stop_me.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Licking Momma's face</b></p>
-	    <p class="videoTitle" style="float:right"><b>Resting with Ruchi</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy03_licking_mommas_face.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy03_resting_with_ruchi.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Resting in my box</b></p>
-	    <p class="videoTitle" style="float:right"><b>Resting against my pillow</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy03_resting_in_box.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy03_resting_against_pillow.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Badass!</b></p>
-	    <p class="videoTitle" style="float:right"><b>That's all folks...</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/normy04_badass.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/normy04_fin.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-	
-      </div>
-    </div>
-
-    <div id="Rattoo Videos" class="tabcontent">
-      <div class="tab" style="width:235px">
-        <button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
-        <button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
-      </div>
-
-      <div class="container">
-	
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Fed by Mama</b></p>
-	    <p class="videoTitle" style="float:right"><b>Snuggling with Mama</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/rattoo_fed_by_mama.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/rattoo_snuggling_with_mama.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>In Search of Something...</b></p>
-	    <p class="videoTitle" style="float:right"><b>Struggling to Share</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/rattoo_in_search_of_something.mp4" type="video/mp4">
-	    </video>
-	    <video controls class="video" style="float:right">
-	      <source src="videos/rattoo_struggling_to_share.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-        <div class="videoAndTitleContainer">
-          <div>
-	    <p class="videoTitle" style="float:left"><b>Returning Home</b></p>
-          </div>
-          <div>
-	    <video controls class="video" style="float:left">
-	      <source src="videos/rattoo_returning_home.mp4" type="video/mp4">
-	    </video>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    
-    <div id="Memories" class="tabcontent">
-      <div class="tab" style="width:270px">
-        <button class="tablinks" onclick="openTab(event,'Pixel Memories')">Pixel Memories</button>
-        <button class="tablinks" onclick="openTab(event,'Norman Memories')">Norman Memories</button>
-      </div>
-    </div>
-
-    <div id="Pixel Memories" class="tabcontent">
-      <div class="tab" style="width:270px">
-        <button class="tablinks" onclick="openTab(event,'Pixel Memories')">Pixel Memories</button>
-        <button class="tablinks" onclick="openTab(event,'Norman Memories')">Norman Memories</button>
-      </div>
-      <ul>
-	<li>He would lick us all over - Deepti</li>
-	<li>He would come and butt his head to seek attention</li>
-	<li>The first day, he came and sat next to us and won us over in less than one hour - Rajat</li>
-	<li>I was so mad Ruchi was getting him (due to his age) but he became the love of my life - Niren</li>
-	<li>He would come up to each of us individually and spread his love</li>
-	<li>When he sat with Deepti and then I came, he would dump her and run to me - Niren</li>
-	<li>In the first week, we thought we lost him. However, after a lot of searching, we foud him cuddled up in a box in the nook - Rajat</li>
-	<li>He would always find new places to lay down, then get bored and find new places</li>
-	<li>He got stuck under the stairs behind the curtain in the basement and we could not find him</li>
-	<li>He would sit on bags, that we would put on the surfboard and pull like a chariot - Rajat</li>
-	<li>He would jump behind the TV and get stuck, forcing us to retrieve him</li>
-	<li>We would set up the tunnel for Norman and he would sit down on top of it</li>
-	<li>He would manipulate me to come to pet him while eating by swatting Normandy - Niren</li>
-	<li>He recognized us in the hospital and wanted to get out of his cage to come home with us</li>
-	<li>He would want to enter Ruchi's room in the morning and we would crack open the door so he could jump in bed with her</li>
-	<li>He would sit on my laptop as I worked, forcing me to pet him instead - Rajat</li>
-	<li>We would throw toys up the stairs and he would run up and knock it back down</li>
-	<li>He would play by himself in the morning sometimes run up to lower steps, roll over and make happy noises and then suddenly run super fast into the living room or his room as if he was chasing something</li>
-	<li>He did not like being in my lap... except that last day in the hospital when he let me hug him and hold him tight next to my chest. What a lovebug... always wanted to make you happy... - Niren</li>
-	<li>He would like to kill things with his right back leg as if he was going in for the attack</li>
-	<li>Sometimes he tried to bite Normy's ear but only when we were around. If were not around he always left Normy alone</li>
-	<li>He would sit on my lap in the basement chairs - Rajat</li>
-	<li>When I came home from office, he would come and greet me from wherever he was - Niren</li>
-	<li>He would sit on Rajat's chair in his room</li>
-	<li>He loved drinking water out of both taps in the upstairs bathroom</li>
-	<li>He would always clean in the sink before sitting down</li>
-	<li>He would sit and stare at you when we wanted food</li>
-	<li>He had two different meows: hungry and playful</li>
-	<li>He never ever got angry. He was very forgiving</li>
-	<li>He loved tummy rubs!</li>
-	<li>He would push away with his leg if he did not want a rub</li>
-	<li>The jingle of his collar as he walked</li>
-	<li>He would lie down in the basement and sleep in bed with me - Rajat</li>
-	<li>Whenever we were fixing anything, he would come and try to help, as if he was an expert insepecting our work</li>
-	<li>When we took him outside, he would sit next to the screen door and watch birds and animals</li>
-	<li>He would cry in the morning inside his room waiting for the door to open</li>
-	<li>As soon as the door opened, I would pet him and he would walk to the small box and scratch his front leg on the box - Niren</li>
-	<li>He loved getting rubbed by the beard and loved getting hugged in the hospital</li>
-	<li>He sat right in front of closed doors so we had to put up signs to prevent hitting him while opening them</li>
-	<li>He sat at the screen door and watched Deepti and Rajat play badminton, with his head closely following the birdie</li>
-	<li>He loved his sample carpet for his stairs</li>
-	<li>I loved kissing and hugging him as well as stroking his tail when he ate</li>
-	<li>He would come up and sit in bed with Deepti</li>
-	<li>When we slept with him in his room he was uncomfortable, he preferred his privacy</li>
-	<li>He would get up whenever anybody came in the room</li>
-	<li>He gave unconditional love to everybody</li>
-	<li>He sat and slept at the window in the sun</li>
-	<li>He loved exploring in the car, sitting up and looking out the windows and sitting in the front seat</li>
-	<li>He would come up and lie in master bed. He spent so many Saturday mornings laying in bed with Niren</li>
-	<li>In the summer, he would be desperate to go outside even though we didn't want him to</li>
-	<li>He would love to do things you did not want him to, a rebellious yet loving cat</li>
-	<li>Tummy rubs were his favorite. He would grab your arm with his front and back leg and not let go. If you pulled out your arm, he would turn up his head and look at you with a death stare until you returned your arm to him</li>
-	<li>He loved playing with rubber bands. One would throw it up high and he would catch it in his mouth</li>
-	<li>He loved playing and running on brown paper from boxes. If one threw a rubber band on it he would kick it off but not chase it outside the region of paper. He had marked it as his territory</li>
-	<li>He had such a graceful walk, like a supermodel</li>
-	<li>He loved getting covered up with blankets in the winter</li>
-	<li>Sometimes he would really love going after Norman and we would have to lock him up in his room to keep them apart. We couldn't stay mad at him though :)</li>
-	<li>He would run after us when we brought food from the kitched to his room</li>
-	<li>When Rajat was at UMass Amherst and Deepti and Ruchi were going to Cornell, Pixel had escaped through the back door to under the front steps. I was frantically running around shouting for Pixel in the yard - Niren</li>
-	<li>He loved sitting in Norman's boxes</li>
-	<li>After we would close Norman in his cage, Pixel would still think he was in the box and search for him</li>
-	<li>Normy had double-decker boxes and Pixel would sit in the top level</li>
-	<li>He was most vocal in the mornings</li>
-	<li>When he first came home, he and Normy would rub noses and love each other to get introduced</li>
-	<li>When Normy got sick, Pixel would show compassion by lying down in front his cage</li>
-	<li>He loved drinking from Normy's bowl, in alignment with his rebellious nature</li>
-	<li>He would run like a tiger with rubber bands and foil balls</li>
-	<li>He react furiously with Dr. Daria Smith by making loud noises</li>
-	<li>When we got him all kinds of expensive toys/towers, he didn't care and preferred garbage plastic bags and cardboard boxes</li>
-	<li>When we got him catnip he couldn't care less</li>
-	<li>He was a simple cat for sure...</li>
-      </ul>
-    </div>
-
-    <div id="Norman Memories" class="tabcontent">
-      <div class="tab" style="width:270px">
-        <button class="tablinks" onclick="openTab(event,'Pixel Memories')">Pixel Memories</button>
-        <button class="tablinks" onclick="openTab(event,'Norman Memories')">Norman Memories</button>
-      </div>
-      <ul>
-        <li>He used to enjoy climbing on top of his boxes, and so we had built large castles out of cardboard boxes of varying sizes</li>
-        <li>He would often rest on top of the larger box, and sometimes Pixel would come and sniff him or even try to climb up the boxes himself</li>
-        <li>Whenever we made a new box for him, he would always spend the whole day ripping it apart, making lots of noise in a playful but angry-sounding way</li>
-        <li>Norman and Pixel would sometimes play-fight each other, with Pixel often raising his hand as if preparing to slap but seldom following through</li>
-        <li>I remember when Norman was quite sick, Pixel would come and lie down outside his cage, as if expressing his concern for Norman’s health</li>
-        <li>Norman was truly a fighter! Even when hurt or tired, he would never be afraid to express his opinion by, for example, kicking Papa’s arm while being fed critical care</li>
-        <li>It was always a magical moment when Norman would decide to lick someone. I remember when he would regularly lick Mom’s face while she held him up for giving medicine and cleaning. It was like a mark of trust from Norman</li>
-        <li>He used to love going through the tunnel we had made for him and pixel but pixel would squash it when Norman was in it</li>
-        <li>I remember when we first saw him in the shelter he was so feisty. He kept running around and would let us touch him</li>
-        <li>He had a slight head tilt when we adopted him but it went away over time because of our love</li>
-        <li>I remember the people at the shelter told us how he was a very aggressive bunny and had been returned by previous adopters. They didn’t know if he would adjust with us. But he did</li>
-        <li>They told us he would not bond with another bunny so we never adopted another bunny</li>
-        <li>When normy initially came he would push us away and not let us pet him but he warmed up so much over time</li>
-        <li>When pixel would sit on Rajat’s guitar case Norman would come up to say hi ... never scared</li>
-        <li>The first and only time we took him outside on the deck he froze and developed his first bout of GI stasis</li>
-        <li>Was always curious to see pixel’s room when pixel was with us never before or after pixel. He would go up all the way to pixels door</li>
-        <li>He was a master at stretching out his full body … like he was resting on the beach</li>
-        <li>If you laid down in front of his cage at ground level and patted on the ground he would smell you and come up to you and rest himself while you rubbed his head</li>
-        <li>When you gave him meds, he would lick his lips and you could see his little tongue darting in and out as he cleaned up his lips</li>
-        <li>When he was young, he would chew up any electrical cord that came in sight--they all had to be hidden</li>
-        <li>Norman in the mornings would run under the sofa and sit there which was scary because if someone did not see him and sat on the sofa he would get hurt. We would have to give him kale to entice him out</li>
-        <li>Sometimes he would thump his back feet, it was amazing how loud it could be. Usually it was because he was scared of something and was trying to warn others or express his displeasure, we would have to calm him down</li>
-        <li>He would always know where his food came from and i don't know how but if we bought kale from anywhere other than market basket he would recognize and not eat</li>
-        <li>His way of showing that he did not like the food either because it was not from market basket or because we were late in giving it to him in the morning was to push the bowl away with his front feet showing his displeasure</li>
-        <li>He loved to lay in his litter boxes sometimes</li>
-        <li>As he got older and was unable to clean himself we gave him a butt and leg bath every 3 weeks or so and he was pretty ok with those for the most part</li>
-        <li>As he got older we had to clean his butt and his fur and sometimes when he did not like it he would kick with his back legs which were so strong even with his arthritis</li>
-        <li>When he was young he was able to jump up on boxes and heights of about a foot. As he got older none of this was possible for him. It was amazing to see the similarities of the effects of aging on him and on humans--he had arthritis, got cataracts, became less mobile</li>
-        <li>He had a healthy diet always just veggies and pellets no carrots or treats ever</li>
-        <li>He was always very affectionate and would react when you spent time with him, rubbed his head and loved him. He would lick and show his affection</li>
-        <li>When he was young he did not like being picked up but as he got older it became easier and we would pick him up and put him on our chest/tummy while we lay on our backs</li>
-        <li>I remember taking mcas one day and asking if I could make a phone call to parents to make sure they had closed young norman’s cage</li>
-        <li>Norman would dance with me when I played die antwoord, if I fell asleep while dancing he would lick me till I woke up and continued</li>
-        <li>Norman was pretty sassy, in the beginning it was hard for him to love people because of his background</li>
-        <li>Norman grew to love us and enjoyed playing and hopping</li>
-        <li>Norman loved chilling with pixel when they sat next to each other</li>
-        <li>When norman was sick, pixel knew, and would lie by his cage and vice versa</li>
-      </ul>
-    </div>
-    
-    <div id="In Memoriam" class="tabcontent">
-
-      <div class="tabbanner">
-        <i>
-        <h3>I hold it true, whate'er befall;</h3>
-        <h3>I feel it, when I sorrow most;</h3>
-        <h3>'Tis better to have loved and lost</h3>
-        <h3>Than never to have loved at all.</h3>
-        </i>
-      </div>
-
-      <h1>August 11th, 2019</h1>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2019_08_11_I.jpg">
-	  <img src="images/in_memoriam_2019_08_11_I.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2019_08_11_II.jpg">
-	  <img src="images/in_memoriam_2019_08_11_II.jpg" style="width:33%">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2019_08_11_III.jpg">
-	  <img src="images/in_memoriam_2019_08_11_III.jpg" style="width:33%">
-	</a>
-      </div>
-
-      <h1>May 31st, 2020</h1>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2020_05_31_I.jpg">
-	  <img src="images/in_memoriam_2020_05_31_I.jpg" style="width:49.5%; float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2020_05_31_II.jpg">
-	  <img src="images/in_memoriam_2020_05_31_II.jpg" style="width:49.5%; float:right">
-	</a>
-      </div>
-
-      <h1>August 9th, 2020</h1>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2020_08_09.jpg">
-	  <img src="images/in_memoriam_2020_08_09.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>May 30th, 2021</h1>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_05_30.jpg">
-	  <img src="images/in_memoriam_2021_05_30.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>August 15th, 2021</h1>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_08_15.jpg">
-	  <img src="images/in_memoriam_2021_08_15.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>August 28th, 2021</h1>
-      <h2><i>30.9 mi trek to the gravesite, in tribute to Normy</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_08_28.jpg">
-	  <img src="images/in_memoriam_2021_08_28.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>September 10th, 2021</h1>
-      <h2><i>MSPCA "Lanterns of Remembrance"</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_10_pixel_message.jpg">
-	  <img src="images/in_memoriam_2021_09_10_pixel_message.jpg" style="width:49.5%; float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_10_norman_message.jpg">
-	  <img src="images/in_memoriam_2021_09_10_norman_message.jpg" style="width:49.5%; float:right">
-	</a>
-
-	<a target="_blank" href="images/in_memoriam_2021_09_10_pixel.jpg">
-	  <img src="images/in_memoriam_2021_09_10_pixel.jpg" style="width:49.5%; float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_10_norman.jpg">
-	  <img src="images/in_memoriam_2021_09_10_norman.jpg" style="width:49.5%; float:right">
-	</a>
-
-	<a target="_blank" href="images/in_memoriam_2021_09_10_cemetery.jpg">
-	  <img src="images/in_memoriam_2021_09_10_cemetery.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>September 19th, 2021</h1>
-      <h2><i>Pixel's hole covered up; Normy's flowers blooming!</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_19_I.jpg">
-	  <img src="images/in_memoriam_2021_09_19_I.jpg" style="width:49.5%; float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_19_II.jpg">
-	  <img src="images/in_memoriam_2021_09_19_II.jpg" style="width:49.5%; float:right">
-	</a>
-      </div>
-
-      <h1>September 26th, 2021</h1>
-      <h2><i>Normy on rainy Sunday morning...</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_26.jpg">
-	  <img src="images/in_memoriam_2021_09_26.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>September 2021</h1>
-      <h2><i>Living room memorial built in dedication to Pixel and Norman</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_shrine.jpg">
-	  <img src="images/in_memoriam_2021_09_shrine.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h2><i>Various blankets designed in memory of Pixel and Norman</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_blanket_I.jpg">
-	  <img src="images/in_memoriam_2021_09_blanket_I.jpg" style="width:49.5%; float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_blanket_II.jpg">
-	  <img src="images/in_memoriam_2021_09_blanket_II.jpg" style="width:49.5%; float:right">
-	</a>
-      </div>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_blanket_III.jpg">
-	  <img src="images/in_memoriam_2021_09_blanket_III.jpg" style="width:100%">
-	</a>
-      </div>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_blanket_IV.jpg">
-	  <img src="images/in_memoriam_2021_09_blanket_IV.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h2><i>Paintings around the house</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_I.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_I.jpg" style="width:49.5%; height:calc(100vw * 0.55); float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_II.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_II.jpg" style="width:49.5%; height:calc(100vw * 0.55); float:right">
-	</a>
-      </div>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_III.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_III.jpg" style="width:49.5%; height:calc(100vw * 0.5); float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_IV.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_IV.jpg" style="width:49.5%; height:calc(100vw * 0.5); float:right">
-	</a>
-      </div>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_V.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_V.jpg" style="width:49.5%; float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_VI.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_VI.jpg" style="width:49.5%; float:right">
-	</a>
-      </div>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_VII.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_VII.jpg" style="width:49.5%; float:left">
-	</a>
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_VIII.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_VIII.jpg" style="width:49.5%; float:right">
-	</a>
-      </div>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_painting_IX.jpg">
-	  <img src="images/in_memoriam_2021_09_painting_IX.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h2><i>"Normy Smoothie" (Kale, Dandelion Greens, Lettuce, and Chicory)</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_09_smoothie.jpg">
-	  <img src="images/in_memoriam_2021_09_smoothie.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>October 3rd, 2021</h1>
-      <h2><i>New planter for Pixel!</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2021_10_03.jpg">
-	  <img src="images/in_memoriam_2021_10_03.jpg" style="width:100%">
-	</a>
-      </div>
-
-      <h1>January 6th, 2022</h1>
-      <h2><i>Norman's gravestone!</i></h2>
-      <div class="container">
-	<a target="_blank" href="images/in_memoriam_2022_01_06.jpg">
-	  <img src="images/in_memoriam_2022_01_06.jpg" style="width:100%">
-	</a>
-      </div>
-
-    </div>
+	</script>
+
+	<center>
+	  <h1><em>In Memory of All Those Who've Perished,<br>But Whose Spirits Live On</em></h1>
+
+	  <!-- <div id="broadcast"> -->
+		<!--   <h3> -->
+		  <!--	   Goodnight, Normy<br>You Were A Fighter All Your Life<br>And Now You May Rest<br><br> -->
+		  <!--	   Goodnight, Normy<br>I'll Sleep Right Beside You<br>Hugging You Close To My Chest<br><br> -->
+		  <!--	   Goodnight, Normy<br>Do You Remember Pixel?<br>You'll Now Be With Him<br><br> -->
+		  <!--	   Goodnight, Normy<br>Sleep Tight, And Forever<br>We'll See You In Heaven -->
+		  <!--	 </h3> -->
+		<!-- </div> -->
+
+	  <!-- <div id="broadcast" style="width:1040px"> -->
+		<!--   <div width="1100"> -->
+		  <!--	   <img src="images/fireworks.gif" /> -->
+		  <!--	   <img src="images/fireworks.gif" /> -->
+		  <!--	   <img src="images/fireworks.gif" /> -->
+		  <!--	 </div> -->
+		<!--   <img src="images/ruchi_birthday_2021.png" width="1000" /> -->
+		<!--   <div width="1100"> -->
+		  <!--	   <img src="images/fireworks.gif" /> -->
+		  <!--	   <img src="images/fireworks.gif" /> -->
+		  <!--	   <img src="images/fireworks.gif" /> -->
+		  <!--	 </div> -->
+		<!-- </div> -->
+
+	  <img class="portrait" height="500" width="400" src="images/homepage_pixel.jpg" alt="Buddy" />
+	  <img class="portrait" height="500" width="550" src="images/homepage_normy.jpg" alt="Normy" />
+	  <img class="portrait" height="300" width="400" src="images/homepage_alfie_eddie.jpg" alt="AlfieEddie" />
+
+	  <h3><bf><em>You were the lights that shone in our lives</em></bf></h3>
+	</center>
+
+	<div class="tab">
+	  <button class="tablinks" onclick="openTab(event,'Pixel')">Pixel</button>
+	  <button class="tablinks" onclick="openTab(event,'Norman')">Norman</button>
+	  <button class="tablinks" onclick="openTab(event,'Alfie')">Alfie</button>
+	  <button class="tablinks" onclick="openTab(event,'Eddie')">Eddie</button>
+	  <button class="tablinks" onclick="openTab(event,'Specs')">Specs</button>
+	  <div class="inMemoriam">
+		<button class="tablinks" onclick="openTab(event,'In Memoriam')"><font color="black"><i>In Memoriam</i></font></button>
+	  </div>
+	  <div class="rightTab">
+		<button class="tablinks" onclick="openTab(event,'Memories')">Memories</button>
+	  </div>
+	  <div class="rightTab">
+		<button class="tablinks" onclick="openTab(event,'Videos')">Videos</button>
+	  </div>
+	</div>
+
+	<div id="Pixel" class="tabcontent">
+	  <h2>Rest In Peace, Buddy</h2>
+	  <h3><i>(July 1st, 2002 - June 19th, 2017)</i></h3>
+
+	  <div class="container">
+
+		<a target="_blank" href="images/pixel01.jpg">
+		  <img src="images/pixel01.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel02.jpg">
+		  <img src="images/pixel02.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel03.jpg">
+		  <img src="images/pixel03.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel04.jpg">
+		  <img src="images/pixel04.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel05.jpg">
+		  <img src="images/pixel05.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel06.jpg">
+		  <img src="images/pixel06.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel07.jpg">
+		  <img src="images/pixel07.jpg" style="width:31%; height:calc(100vw * 0.563)">
+		</a>
+		<a target="_blank" href="images/pixel08.jpg">
+		  <img src="images/pixel08.jpg" style="width:31%; height:calc(100vw * 0.563)">
+		</a>
+		<a target="_blank" href="images/pixel09.jpg">
+		  <img src="images/pixel09.jpg" style="width:31%; height:calc(100vw * 0.563)">
+		</a>
+
+		<a target="_blank" href="images/pixel10.jpg">
+		  <img src="images/pixel10.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel11.jpg">
+		  <img src="images/pixel11.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel12.jpg">
+		  <img src="images/pixel12.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel13.jpg">
+		  <img src="images/pixel13.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel14.jpg">
+		  <img src="images/pixel14.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel15.jpg">
+		  <img src="images/pixel15.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel16.jpg">
+		  <img src="images/pixel16.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel17.jpg">
+		  <img src="images/pixel17.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel18.jpg">
+		  <img src="images/pixel18.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel19.jpg">
+		  <img src="images/pixel19.jpg" style="width:31%; height:calc(100vw * 0.32)">
+		</a>
+		<a target="_blank" href="images/pixel20.jpg">
+		  <img src="images/pixel20.jpg" style="width:31%; height:calc(100vw * 0.32)">
+		</a>
+		<a target="_blank" href="images/pixel21.jpg">
+		  <img src="images/pixel21.jpg" style="width:31%; height:calc(100vw * 0.32)">
+		</a>
+
+		<a target="_blank" href="images/pixel22.jpg">
+		  <img src="images/pixel22.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel23.jpg">
+		  <img src="images/pixel23.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel24.jpg">
+		  <img src="images/pixel24.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel25.jpg">
+		  <img src="images/pixel25.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel26.jpg">
+		  <img src="images/pixel26.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel27.jpg">
+		  <img src="images/pixel27.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel28.jpg">
+		  <img src="images/pixel28.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel29.jpg">
+		  <img src="images/pixel29.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel30.jpg">
+		  <img src="images/pixel30.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel31.jpg">
+		  <img src="images/pixel31.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel32.jpg">
+		  <img src="images/pixel32.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel33.jpg">
+		  <img src="images/pixel33.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel34.jpg">
+		  <img src="images/pixel34.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel35.jpg">
+		  <img src="images/pixel35.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel36.jpg">
+		  <img src="images/pixel36.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel37.jpg">
+		  <img src="images/pixel37.jpg" style="width:31%; height:calc(100vw * 0.423)">
+		</a>
+		<a target="_blank" href="images/pixel38.jpg">
+		  <img src="images/pixel38.jpg" style="width:31%; height:calc(100vw * 0.423)">
+		</a>
+		<a target="_blank" href="images/pixel39.jpg">
+		  <img src="images/pixel39.jpg" style="width:31%; height:calc(100vw * 0.423)">
+		</a>
+
+		<a target="_blank" href="images/pixel40.jpg">
+		  <img src="images/pixel40.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel41.jpg">
+		  <img src="images/pixel41.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel42.jpg">
+		  <img src="images/pixel42.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel43.jpg">
+		  <img src="images/pixel43.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel44.jpg">
+		  <img src="images/pixel44.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel45.jpg">
+		  <img src="images/pixel45.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel46.jpg">
+		  <img src="images/pixel46.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel47.jpg">
+		  <img src="images/pixel47.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel48.jpg">
+		  <img src="images/pixel48.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel49.jpg">
+		  <img src="images/pixel49.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel50.jpg">
+		  <img src="images/pixel50.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel51.jpg">
+		  <img src="images/pixel51.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel52.jpg">
+		  <img src="images/pixel52.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel53.jpg">
+		  <img src="images/pixel53.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel54.jpg">
+		  <img src="images/pixel54.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel55.jpg">
+		  <img src="images/pixel55.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel56.jpg">
+		  <img src="images/pixel56.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel57.jpg">
+		  <img src="images/pixel57.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel58.jpg">
+		  <img src="images/pixel58.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel59.jpg">
+		  <img src="images/pixel59.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel60.jpg">
+		  <img src="images/pixel60.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel61.jpg">
+		  <img src="images/pixel61.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel62.jpg">
+		  <img src="images/pixel62.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel63.jpg">
+		  <img src="images/pixel63.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel64.jpg">
+		  <img src="images/pixel64.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel65.jpg">
+		  <img src="images/pixel65.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel66.jpg">
+		  <img src="images/pixel66.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel67.jpg">
+		  <img src="images/pixel67.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel68.jpg">
+		  <img src="images/pixel68.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel69.jpg">
+		  <img src="images/pixel69.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel70.jpg">
+		  <img src="images/pixel70.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel71.jpg">
+		  <img src="images/pixel71.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel72.jpg">
+		  <img src="images/pixel72.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel73.jpg">
+		  <img src="images/pixel73.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel74.jpg">
+		  <img src="images/pixel74.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel75.jpg">
+		  <img src="images/pixel75.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel76.jpg">
+		  <img src="images/pixel76.jpg" style="width:31%; height:calc(100vw * 0.24)">
+		</a>
+		<a target="_blank" href="images/pixel77.jpg">
+		  <img src="images/pixel77.jpg" style="width:31%; height:calc(100vw * 0.24)">
+		</a>
+		<a target="_blank" href="images/pixel78.jpg">
+		  <img src="images/pixel78.jpg" style="width:31%; height:calc(100vw * 0.24)">
+		</a>
+
+		<a target="_blank" href="images/pixel79.jpg">
+		  <img src="images/pixel79.jpg" style="width:31%; height:calc(100vw * 0.24)">
+		</a>
+		<a target="_blank" href="images/pixel80.jpg">
+		  <img src="images/pixel80.jpg" style="width:31%; height:calc(100vw * 0.24)">
+		</a>
+		<a target="_blank" href="images/pixel81.jpg">
+		  <img src="images/pixel81.jpg" style="width:31%; height:calc(100vw * 0.24)">
+		</a>
+
+		<a target="_blank" href="images/pixel82.jpg">
+		  <img src="images/pixel82.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel83.jpg">
+		  <img src="images/pixel83.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel84.jpg">
+		  <img src="images/pixel84.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel85.jpg">
+		  <img src="images/pixel85.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel86.jpg">
+		  <img src="images/pixel86.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel87.jpg">
+		  <img src="images/pixel87.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel88.jpg">
+		  <img src="images/pixel88.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel89.jpg">
+		  <img src="images/pixel89.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel90.jpg">
+		  <img src="images/pixel90.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel91.jpg">
+		  <img src="images/pixel91.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel92.jpg">
+		  <img src="images/pixel92.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel93.jpg">
+		  <img src="images/pixel93.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel94.jpg">
+		  <img src="images/pixel94.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel95.jpg">
+		  <img src="images/pixel95.jpg" style="width:31%">
+		</a>
+		<a target="_blank" href="images/pixel96.jpg">
+		  <img src="images/pixel96.jpg" style="width:31%">
+		</a>
+
+		<a target="_blank" href="images/pixel97.jpg">
+		  <img src="images/pixel97.jpg" style="width:60%">
+		</a>
+		<p style="font-size:5em; float:right"><em>Rest In<br>Peace...</em></p>
+
+	  </div>
+	</div>
+
+	<div id="Norman" class="tabcontent">
+	  <h2>Rest In Peace, Normy</h2>
+	  <h3><i>(June 31st, 2013 - August 25th, 2021)</i></h3>
+
+	  <a target="_blank" href="images/normy001.jpg">
+		<img src="images/normy001.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy002.jpg">
+		<img src="images/normy002.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy003.jpg">
+		<img src="images/normy003.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy004.jpg">
+		<img src="images/normy004.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy005.jpg">
+		<img src="images/normy005.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy006.jpg">
+		<img src="images/normy006.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy007.jpg">
+		<img src="images/normy007.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy008.jpg">
+		<img src="images/normy008.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy009.jpg">
+		<img src="images/normy009.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy010.jpg">
+		<img src="images/normy010.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy011.jpg">
+		<img src="images/normy011.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy012.jpg">
+		<img src="images/normy012.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy013.jpg">
+		<img src="images/normy013.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy014.jpg">
+		<img src="images/normy014.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy015.jpg">
+		<img src="images/normy015.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy016.jpg">
+		<img src="images/normy016.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy017.jpg">
+		<img src="images/normy017.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy018.jpg">
+		<img src="images/normy018.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy019.jpg">
+		<img src="images/normy019.jpg" style="width:33%; height:calc(100vw * 0.4)">
+	  </a>
+	  <a target="_blank" href="images/normy020.jpg">
+		<img src="images/normy020.jpg" style="width:33%; height:calc(100vw * 0.4)">
+	  </a>
+	  <a target="_blank" href="images/normy021.jpg">
+		<img src="images/normy021.jpg" style="width:33%; height:calc(100vw * 0.4)">
+	  </a>
+
+	  <a target="_blank" href="images/normy022.jpg">
+		<img src="images/normy022.jpg" style="width:33%; height:calc(100vw * 0.4)">
+	  </a>
+	  <a target="_blank" href="images/normy023.jpg">
+		<img src="images/normy023.jpg" style="width:33%; height:calc(100vw * 0.4)">
+	  </a>
+	  <a target="_blank" href="images/normy024.jpg">
+		<img src="images/normy024.jpg" style="width:33%; height:calc(100vw * 0.4)">
+	  </a>
+
+	  <a target="_blank" href="images/normy025.jpg">
+		<img src="images/normy025.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy026.jpg">
+		<img src="images/normy026.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy027.jpg">
+		<img src="images/normy027.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy028.jpg">
+		<img src="images/normy028.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy029.jpg">
+		<img src="images/normy029.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy030.jpg">
+		<img src="images/normy030.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy031.jpg">
+		<img src="images/normy031.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy032.jpg">
+		<img src="images/normy032.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy033.jpg">
+		<img src="images/normy033.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy034.jpg">
+		<img src="images/normy034.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy035.jpg">
+		<img src="images/normy035.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy036.jpg">
+		<img src="images/normy036.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy037.jpg">
+		<img src="images/normy037.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy038.jpg">
+		<img src="images/normy038.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy039.jpg">
+		<img src="images/normy039.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy040.jpg">
+		<img src="images/normy040.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy041.jpg">
+		<img src="images/normy041.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy042.jpg">
+		<img src="images/normy042.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy043.jpg">
+		<img src="images/normy043.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy044.jpg">
+		<img src="images/normy044.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy045.jpg">
+		<img src="images/normy045.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy046.jpg">
+		<img src="images/normy046.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy047.jpg">
+		<img src="images/normy047.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy048.jpg">
+		<img src="images/normy048.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy049.jpg">
+		<img src="images/normy049.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy050.jpg">
+		<img src="images/normy050.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy051.jpg">
+		<img src="images/normy051.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy052.jpg">
+		<img src="images/normy052.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy053.jpg">
+		<img src="images/normy053.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy054.jpg">
+		<img src="images/normy054.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy055.jpg">
+		<img src="images/normy055.jpg" style="width:33%; height:calc(100vw * 0.43)">
+	  </a>
+	  <a target="_blank" href="images/normy056.jpg">
+		<img src="images/normy056.jpg" style="width:33%; height:calc(100vw * 0.43)">
+	  </a>
+	  <a target="_blank" href="images/normy057.jpg">
+		<img src="images/normy057.jpg" style="width:33%; height:calc(100vw * 0.43)">
+	  </a>
+
+	  <a target="_blank" href="images/normy058.jpg">
+		<img src="images/normy058.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy059.jpg">
+		<img src="images/normy059.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy060.jpg">
+		<img src="images/normy060.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy061.jpg">
+		<img src="images/normy061.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy062.jpg">
+		<img src="images/normy062.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy063.jpg">
+		<img src="images/normy063.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy064.jpg">
+		<img src="images/normy064.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy065.jpg">
+		<img src="images/normy065.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy066.jpg">
+		<img src="images/normy066.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy067.jpg">
+		<img src="images/normy067.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy068.jpg">
+		<img src="images/normy068.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy069.jpg">
+		<img src="images/normy069.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy070.jpg">
+		<img src="images/normy070.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy071.jpg">
+		<img src="images/normy071.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy072.jpg">
+		<img src="images/normy072.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy073.jpg">
+		<img src="images/normy073.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy074.jpg">
+		<img src="images/normy074.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy075.jpg">
+		<img src="images/normy075.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy076.jpg">
+		<img src="images/normy076.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy077.jpg">
+		<img src="images/normy077.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy078.jpg">
+		<img src="images/normy078.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy079.jpg">
+		<img src="images/normy079.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy080.jpg">
+		<img src="images/normy080.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy081.jpg">
+		<img src="images/normy081.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy082.jpg">
+		<img src="images/normy082.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy083.jpg">
+		<img src="images/normy083.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy084.jpg">
+		<img src="images/normy084.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy085.jpg">
+		<img src="images/normy085.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy086.jpg">
+		<img src="images/normy086.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy087.jpg">
+		<img src="images/normy087.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy088.jpg">
+		<img src="images/normy088.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy089.jpg">
+		<img src="images/normy089.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy090.jpg">
+		<img src="images/normy090.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy091.jpg">
+		<img src="images/normy091.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy092.jpg">
+		<img src="images/normy092.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy093.jpg">
+		<img src="images/normy093.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy094.jpg">
+		<img src="images/normy094.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy095.jpg">
+		<img src="images/normy095.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy096.jpg">
+		<img src="images/normy096.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy097.jpg">
+		<img src="images/normy097.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy098.jpg">
+		<img src="images/normy098.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy099.jpg">
+		<img src="images/normy099.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy100.jpg">
+		<img src="images/normy100.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy101.jpg">
+		<img src="images/normy101.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy102.jpg">
+		<img src="images/normy102.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy103.jpg">
+		<img src="images/normy103.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy104.jpg">
+		<img src="images/normy104.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy105.jpg">
+		<img src="images/normy105.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy106.jpg">
+		<img src="images/normy106.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy107.jpg">
+		<img src="images/normy107.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy108.jpg">
+		<img src="images/normy108.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy109.jpg">
+		<img src="images/normy109.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy110.jpg">
+		<img src="images/normy110.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy111.jpg">
+		<img src="images/normy111.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy112.jpg">
+		<img src="images/normy112.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy113.jpg">
+		<img src="images/normy113.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy114.jpg">
+		<img src="images/normy114.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy115.jpg">
+		<img src="images/normy115.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy116.jpg">
+		<img src="images/normy116.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy117.jpg">
+		<img src="images/normy117.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy118.jpg">
+		<img src="images/normy118.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy119.jpg">
+		<img src="images/normy119.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy120.jpg">
+		<img src="images/normy120.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy121.jpg">
+		<img src="images/normy121.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy122.jpg">
+		<img src="images/normy122.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy123.jpg">
+		<img src="images/normy123.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy124.jpg">
+		<img src="images/normy124.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy125.jpg">
+		<img src="images/normy125.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy126.jpg">
+		<img src="images/normy126.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy127.jpg">
+		<img src="images/normy127.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy128.jpg">
+		<img src="images/normy128.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy129.jpg">
+		<img src="images/normy129.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy130.jpg">
+		<img src="images/normy130.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy131.jpg">
+		<img src="images/normy131.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy132.jpg">
+		<img src="images/normy132.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy133.jpg">
+		<img src="images/normy133.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy134.jpg">
+		<img src="images/normy134.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy135.jpg">
+		<img src="images/normy135.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy136.jpg">
+		<img src="images/normy136.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy137.jpg">
+		<img src="images/normy137.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy138.jpg">
+		<img src="images/normy138.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy139.jpg">
+		<img src="images/normy139.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy140.jpg">
+		<img src="images/normy140.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy141.jpg">
+		<img src="images/normy141.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy142.jpg">
+		<img src="images/normy142.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy143.jpg">
+		<img src="images/normy143.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy144.jpg">
+		<img src="images/normy144.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy145.jpg">
+		<img src="images/normy145.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy146.jpg">
+		<img src="images/normy146.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy147.jpg">
+		<img src="images/normy147.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy148.jpg">
+		<img src="images/normy148.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy149.jpg">
+		<img src="images/normy149.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy150.jpg">
+		<img src="images/normy150.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy151.jpg">
+		<img src="images/normy151.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy152.jpg">
+		<img src="images/normy152.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy153.jpg">
+		<img src="images/normy153.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy154.jpg">
+		<img src="images/normy154.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy155.jpg">
+		<img src="images/normy155.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy156.jpg">
+		<img src="images/normy156.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy157.jpg">
+		<img src="images/normy157.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy158.jpg">
+		<img src="images/normy158.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy159.jpg">
+		<img src="images/normy159.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy160.jpg">
+		<img src="images/normy160.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy161.jpg">
+		<img src="images/normy161.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy162.jpg">
+		<img src="images/normy162.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy163.jpg">
+		<img src="images/normy163.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy164.jpg">
+		<img src="images/normy164.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy165.jpg">
+		<img src="images/normy165.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy166.jpg">
+		<img src="images/normy166.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy167.jpg">
+		<img src="images/normy167.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy168.jpg">
+		<img src="images/normy168.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy169.jpg">
+		<img src="images/normy169.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy170.jpg">
+		<img src="images/normy170.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy171.jpg">
+		<img src="images/normy171.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy172.jpg">
+		<img src="images/normy172.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy173.jpg">
+		<img src="images/normy173.jpg" style="width:33%">
+	  </a>
+	  <a target="_blank" href="images/normy174.jpg">
+		<img src="images/normy174.jpg" style="width:33%">
+	  </a>
+
+	  <a target="_blank" href="images/normy_letter01.jpg">
+		<img src="images/normy_letter01.jpg" style="width:33%; height:calc(100vw * 0.5)">
+	  </a>
+	  <a target="_blank" href="images/normy_letter02.jpg">
+		<img src="images/normy_letter02.jpg" style="width:66%; height:calc(100vw * 0.5)">
+	  </a>
+
+	  <a target="_blank" href="images/normy_mspca_letter01.jpg">
+		<img src="images/normy_mspca_letter01.jpg" style="width:33%; height:calc(100vw * 0.3)">
+	  </a>
+	  <a target="_blank" href="images/normy_mspca_letter02.jpg">
+		<img src="images/normy_mspca_letter02.jpg" style="width:33%; height:calc(100vw * 0.3)">
+	  </a>
+	  <a target="_blank" href="images/normy_mspca_letter03.jpg">
+		<img src="images/normy_mspca_letter03.jpg" style="width:33%; height:calc(100vw * 0.3)">
+	  </a>
+
+	</div>
+
+	<div id="Alfie" class="tabcontent">
+
+	  <h1>Dear Aflie,</h1><h3><em>(September 2018 - February 6th, 2021)</em></h3>
+	  <p style="font-size:2em"><em>I love you, Alfie. You were a sweet angel, who fought through the death of your brother and an unfortunate skin condition. Despite all this, you were a happy and gentle boy. May you forever Rest In Peace.</em></p>
+
+	  <div class="container">
+
+		<a target="_blank" href="images/alfie01.jpg">
+		  <img src="images/alfie01.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/alfie02.jpg">
+		  <img src="images/alfie02.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/alfie03.jpg">
+		  <img src="images/alfie03.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/alfie04.jpg">
+		  <img src="images/alfie04.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/alfie05.jpg">
+		  <img src="images/alfie05.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/alfie06.jpg">
+		  <img src="images/alfie06.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/alfie07.jpg">
+		  <img src="images/alfie07.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/alfie08.jpg">
+		  <img src="images/alfie08.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/alfie09.jpg">
+		  <img src="images/alfie09.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/alfie10.jpg">
+		  <img src="images/alfie10.jpg" style="width:49.7%">
+		</a>
+		<a target="_blank" href="images/alfie11.jpg">
+		  <img src="images/alfie11.jpg" style="width:49.7%">
+		</a>
+
+	  </div>
+	</div>
+
+	<div id="Eddie" class="tabcontent">
+
+	  <h1>Dear Eddie,</h1><h3><em>(September 2018 - October 12th, 2020)</em></h3>
+	  <p style="font-size:2em"><em>Goodbye, my sweet boy. You were a little over two years old. I am glad to know that you passed peacefully in your sleep, with your brother right there, comforting you. I love you unimaginably so and you made my life brighter. Like losing any pet, it is like losing a family member, a very dear one who never gets angry at you and is always there for you. I will miss you Eddie. Rest in Peace.</em></p>
+
+	  <div class="container">
+
+		<a target="_blank" href="images/eddie01.jpg">
+		  <img src="images/eddie01.jpg" style="width:33%; height:calc(100vw * 0.587)">
+		</a>
+		<a target="_blank" href="images/eddie02.jpg">
+		  <img src="images/eddie02.jpg" style="width:33%; height:calc(100vw * 0.587)">
+		</a>
+		<a target="_blank" href="images/eddie03.jpg">
+		  <img src="images/eddie03.jpg" style="width:33%; height:calc(100vw * 0.587)">
+		</a>
+
+		<a target="_blank" href="images/eddie04.jpg">
+		  <img src="images/eddie04.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/eddie05.jpg">
+		  <img src="images/eddie05.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/eddie06.jpg">
+		  <img src="images/eddie06.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/eddie07.jpg">
+		  <img src="images/eddie07.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/eddie08.jpg">
+		  <img src="images/eddie08.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/eddie09.jpg">
+		  <img src="images/eddie09.jpg" style="width:33%">
+		</a>
+
+	  </div>
+	</div>
+
+	<div id="Specs" class="tabcontent">
+
+	  <h1>R.I.P. Specs</h1><h3><em>(d. March 9th, 2022)</em></h3>
+
+	  <div class="container">
+
+		<a target="_blank" href="images/specs001.jpg">
+		  <img src="images/specs001.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs002.jpg">
+		  <img src="images/specs002.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs003.jpg">
+		  <img src="images/specs003.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs004.jpg">
+		  <img src="images/specs004.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs005.jpg">
+		  <img src="images/specs005.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs006.jpg">
+		  <img src="images/specs006.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs007.jpg">
+		  <img src="images/specs007.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs008.jpg">
+		  <img src="images/specs008.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs009.jpg">
+		  <img src="images/specs009.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs010.jpg">
+		  <img src="images/specs010.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs011.jpg">
+		  <img src="images/specs011.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs012.jpg">
+		  <img src="images/specs012.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs013.jpg">
+		  <img src="images/specs013.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs014.jpg">
+		  <img src="images/specs014.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs015.jpg">
+		  <img src="images/specs015.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs016.jpg">
+		  <img src="images/specs016.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs017.jpg">
+		  <img src="images/specs017.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs018.jpg">
+		  <img src="images/specs018.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs019.jpg">
+		  <img src="images/specs019.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs020.jpg">
+		  <img src="images/specs020.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs021.jpg">
+		  <img src="images/specs021.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs022.jpg">
+		  <img src="images/specs022.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs023.jpg">
+		  <img src="images/specs023.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs024.jpg">
+		  <img src="images/specs024.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs025.jpg">
+		  <img src="images/specs025.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs026.jpg">
+		  <img src="images/specs026.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs027.jpg">
+		  <img src="images/specs027.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs028.jpg">
+		  <img src="images/specs028.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs029.jpg">
+		  <img src="images/specs029.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs030.jpg">
+		  <img src="images/specs030.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs031.jpg">
+		  <img src="images/specs031.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs032.jpg">
+		  <img src="images/specs032.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs033.jpg">
+		  <img src="images/specs033.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs034.jpg">
+		  <img src="images/specs034.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs035.jpg">
+		  <img src="images/specs035.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs036.jpg">
+		  <img src="images/specs036.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs037.jpg">
+		  <img src="images/specs037.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs038.jpg">
+		  <img src="images/specs038.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs039.jpg">
+		  <img src="images/specs039.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs040.jpg">
+		  <img src="images/specs040.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs041.jpg">
+		  <img src="images/specs041.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs042.jpg">
+		  <img src="images/specs042.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs043.jpg">
+		  <img src="images/specs043.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs044.jpg">
+		  <img src="images/specs044.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs045.jpg">
+		  <img src="images/specs045.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs046.jpg">
+		  <img src="images/specs046.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs047.jpg">
+		  <img src="images/specs047.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs048.jpg">
+		  <img src="images/specs048.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs049.jpg">
+		  <img src="images/specs049.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs050.jpg">
+		  <img src="images/specs050.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs051.jpg">
+		  <img src="images/specs051.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs052.jpg">
+		  <img src="images/specs052.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs053.jpg">
+		  <img src="images/specs053.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs054.jpg">
+		  <img src="images/specs054.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs055.jpg">
+		  <img src="images/specs055.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs056.jpg">
+		  <img src="images/specs056.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs057.jpg">
+		  <img src="images/specs057.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs058.jpg">
+		  <img src="images/specs058.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs059.jpg">
+		  <img src="images/specs059.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs060.jpg">
+		  <img src="images/specs060.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs061.jpg">
+		  <img src="images/specs061.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs062.jpg">
+		  <img src="images/specs062.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs063.jpg">
+		  <img src="images/specs063.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs064.jpg">
+		  <img src="images/specs064.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs065.jpg">
+		  <img src="images/specs065.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs066.jpg">
+		  <img src="images/specs066.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs067.jpg">
+		  <img src="images/specs067.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs068.jpg">
+		  <img src="images/specs068.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs069.jpg">
+		  <img src="images/specs069.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs070.jpg">
+		  <img src="images/specs070.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs071.jpg">
+		  <img src="images/specs071.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs072.jpg">
+		  <img src="images/specs072.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs073.jpg">
+		  <img src="images/specs073.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs074.jpg">
+		  <img src="images/specs074.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs075.jpg">
+		  <img src="images/specs075.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs076.jpg">
+		  <img src="images/specs076.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs077.jpg">
+		  <img src="images/specs077.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs078.jpg">
+		  <img src="images/specs078.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs079.jpg">
+		  <img src="images/specs079.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs080.jpg">
+		  <img src="images/specs080.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs081.jpg">
+		  <img src="images/specs081.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs082.jpg">
+		  <img src="images/specs082.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs083.jpg">
+		  <img src="images/specs083.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs084.jpg">
+		  <img src="images/specs084.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs085.jpg">
+		  <img src="images/specs085.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs086.jpg">
+		  <img src="images/specs086.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs087.jpg">
+		  <img src="images/specs087.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs088.jpg">
+		  <img src="images/specs088.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs089.jpg">
+		  <img src="images/specs089.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs090.jpg">
+		  <img src="images/specs090.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs091.jpg">
+		  <img src="images/specs091.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs092.jpg">
+		  <img src="images/specs092.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs093.jpg">
+		  <img src="images/specs093.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs094.jpg">
+		  <img src="images/specs094.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs095.jpg">
+		  <img src="images/specs095.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs096.jpg">
+		  <img src="images/specs096.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs097.jpg">
+		  <img src="images/specs097.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs098.jpg">
+		  <img src="images/specs098.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs099.jpg">
+		  <img src="images/specs099.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs100.jpg">
+		  <img src="images/specs100.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs101.jpg">
+		  <img src="images/specs101.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs102.jpg">
+		  <img src="images/specs102.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs103.jpg">
+		  <img src="images/specs103.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs104.jpg">
+		  <img src="images/specs104.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs105.jpg">
+		  <img src="images/specs105.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs106.jpg">
+		  <img src="images/specs106.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs107.jpg">
+		  <img src="images/specs107.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs108.jpg">
+		  <img src="images/specs108.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs109.jpg">
+		  <img src="images/specs109.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs110.jpg">
+		  <img src="images/specs110.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs111.jpg">
+		  <img src="images/specs111.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs112.jpg">
+		  <img src="images/specs112.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs113.jpg">
+		  <img src="images/specs113.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs114.jpg">
+		  <img src="images/specs114.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs115.jpg">
+		  <img src="images/specs115.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs116.jpg">
+		  <img src="images/specs116.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs117.jpg">
+		  <img src="images/specs117.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs118.jpg">
+		  <img src="images/specs118.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs119.jpg">
+		  <img src="images/specs119.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs120.jpg">
+		  <img src="images/specs120.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs121.jpg">
+		  <img src="images/specs121.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs122.jpg">
+		  <img src="images/specs122.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs123.jpg">
+		  <img src="images/specs123.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs124.jpg">
+		  <img src="images/specs124.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs125.jpg">
+		  <img src="images/specs125.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs126.jpg">
+		  <img src="images/specs126.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs127.jpg">
+		  <img src="images/specs127.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs128.jpg">
+		  <img src="images/specs128.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs129.jpg">
+		  <img src="images/specs129.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs130.jpg">
+		  <img src="images/specs130.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs131.jpg">
+		  <img src="images/specs131.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs132.jpg">
+		  <img src="images/specs132.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs133.jpg">
+		  <img src="images/specs133.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs134.jpg">
+		  <img src="images/specs134.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs135.jpg">
+		  <img src="images/specs135.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs136.jpg">
+		  <img src="images/specs136.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs137.jpg">
+		  <img src="images/specs137.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs138.jpg">
+		  <img src="images/specs138.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs139.jpg">
+		  <img src="images/specs139.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs140.jpg">
+		  <img src="images/specs140.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs141.jpg">
+		  <img src="images/specs141.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs142.jpg">
+		  <img src="images/specs142.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs143.jpg">
+		  <img src="images/specs143.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs144.jpg">
+		  <img src="images/specs144.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs145.jpg">
+		  <img src="images/specs145.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs146.jpg">
+		  <img src="images/specs146.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs147.jpg">
+		  <img src="images/specs147.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs148.jpg">
+		  <img src="images/specs148.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs149.jpg">
+		  <img src="images/specs149.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs150.jpg">
+		  <img src="images/specs150.jpg" style="width:33%">
+		</a>
+
+		<a target="_blank" href="images/specs151.jpg">
+		  <img src="images/specs151.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs152.jpg">
+		  <img src="images/specs152.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/specs153.jpg">
+		  <img src="images/specs153.jpg" style="width:33%">
+		</a>
+
+	  </div>
+	</div>
+
+	<div id="Videos" class="tabcontent">
+	  <div class="tab" style="width:235px">
+		<button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
+	  </div>
+	</div>
+
+	<div id="Pixel Videos" class="tabcontent">
+	  <div class="tab" style="width:235px">
+		<button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
+	  </div>
+
+	  <div class="container">
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>I observe stray cat</b></p>
+			<p class="videoTitle" style="float:right"><b>Enticing squirrel</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_observes_stray_cat.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_watches_squirrel.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Chilling...</b></p>
+			<p class="videoTitle" style="float:right"><b>Dangerous balancing act</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Chilling_upstairs.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_balancing_act.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>I follow Niren</b></p>
+			<p class="videoTitle" style="float:right"><b>I follow Rajat</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_follows_Niren.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_follows_Rajat.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>A gradual descent</b></p>
+			<p class="videoTitle" style="float:right"><b>Some fun playtime</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_coming_down_stairwell.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_the_playful.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Settling into the basin</b></p>
+			<p class="videoTitle" style="float:right"><b>My favorite activity</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Settling_into_the_basin.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixels_favorite_activity.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Playing with rubber band</b></p>
+			<p class="videoTitle" style="float:right"><b>Chasing rubber bands</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_play.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_the_playful_yet_again.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>More rubber band fun</b></p>
+			<p class="videoTitle" style="float:right"><b>My favorite green bag</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_play_again.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_on_his_green_bag.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>I CAUGHT IT!</b></p>
+			<p class="videoTitle" style="float:right"><b>My failed backflip</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_catches_bait.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_slow_mo.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>I meet Normandy</b></p>
+			<p class="videoTitle" style="float:right"><b>We meet again...</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_and_Norman_intro.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_and_Norman_meet_again.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>My friend Normy</b></p>
+			<p class="videoTitle" style="float:right"><b>My beloved Norman</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_watching_normy.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_Norman_love.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>I just wanted to play...</b></p>
+			<p class="videoTitle" style="float:right"><b>Tunnel Pt. 1: Exposition</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/More_pixel_normy_love.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_and_tunnel_play_(Part_I).mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Tunnel Pt. 2: Climax</b></p>
+			<p class="videoTitle" style="float:right"><b>Tunnel Pt. 3: Resolution</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_and_tunnel_play_(Part_II).mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_and_tunnel_play_(Part_III).mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>The 'boss' walks in</b></p>
+			<p class="videoTitle" style="float:right"><b>I 'love' my new toys</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Pixel_comes_across_norms.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Pixel_could_care_less_about_new_toys.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Deep into the woods</b></p>
+			<p class="videoTitle" style="float:right"><b>Relaxing outside</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Exploring_the_world.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/Relaxing_outside.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer" style="margin-bottom:0">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>A trip to the hospital</b></p>
+			<p class="videoTitle" style="float:right"><b>My last moments...</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/Playful_at_the_hospital.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/His_last_minutes_in_daddys_arms.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+
+	<div id="Norman Videos" class="tabcontent">
+	  <div class="tab" style="width:235px">
+		<button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
+	  </div>
+
+	  <div class="container">
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Exploration Pt. 1: Scouting</b></p>
+			<p class="videoTitle" style="float:right"><b>Exploration Pt. 2: Discovery</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy01_eager_exploration_part_1.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy01_eager_exploration_part_2.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Exploration Pt. 3: Consultation</b></p>
+			<p class="videoTitle" style="float:right"><b>Exploration Pt. 4: Obstacle</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy01_eager_exploration_part_3.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy01_eager_exploration_part_4.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Exploration Pt. 5: Preparation</b></p>
+			<p class="videoTitle" style="float:right"><b>Exploration Pt. 6: Attempt</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy01_eager_exploration_part_5.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy01_eager_exploration_part_6.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Exploration Pt. 7: Success</b></p>
+			<p class="videoTitle" style="float:right"><b>Exploration Pt. 8: Homecoming</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy01_eager_exploration_part_7.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy01_eager_exploration_part_8.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Resting on Ruchi, my love</b></p>
+			<p class="videoTitle" style="float:right"><b>Hmm, who is this?</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy01_resting_on_ruchi.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy01_who_is_this.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Out of my way!!!</b></p>
+			<p class="videoTitle" style="float:right"><b>Can't you see I'm tryin' to eat here?!?</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy01_out_of_my_way.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy02_cant_you_see_im_tryin_to_eat_here.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Dramatic meal!</b></p>
+			<p class="videoTitle" style="float:right"><b>Drinking water</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy02_dramatic_meal.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy02_drinking_water.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Sippin' water</b></p>
+			<p class="videoTitle" style="float:right"><b>Nibbling on hay</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy02_sippin_water.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy02_nibbling_on_hay.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:right"><b>More sippin' water</b></p>
+			<p class="videoTitle" style="float:left"><b>Just chillin'</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy02_more_sippin_water.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy02_just_chillin.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Hideout on ottoman</b></p>
+			<p class="videoTitle" style="float:right"><b>Hideout on ottoman, contd.</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy02_hideout_on_ottoman.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy02_hideout_on_ottoman_contd.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Eating lettuce</b></p>
+			<p class="videoTitle" style="float:right"><b>Head tilt won't stop me!</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy03_eating_lettuce.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy03_head_tilt_wont_stop_me.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Licking Momma's face</b></p>
+			<p class="videoTitle" style="float:right"><b>Resting with Ruchi</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy03_licking_mommas_face.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy03_resting_with_ruchi.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Resting in my box</b></p>
+			<p class="videoTitle" style="float:right"><b>Resting against my pillow</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy03_resting_in_box.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy03_resting_against_pillow.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Badass!</b></p>
+			<p class="videoTitle" style="float:right"><b>That's all folks...</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/normy04_badass.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/normy04_fin.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+
+	<div id="Rattoo Videos" class="tabcontent">
+	  <div class="tab" style="width:235px">
+		<button class="tablinks" onclick="openTab(event,'Pixel Videos')">Pixel Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Norman Videos')">Norman Videos</button>
+		<button class="tablinks" onclick="openTab(event,'Rattoo Videos')">Rattoo Videos</button>
+	  </div>
+
+	  <div class="container">
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Fed by Mama</b></p>
+			<p class="videoTitle" style="float:right"><b>Snuggling with Mama</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/rattoo_fed_by_mama.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/rattoo_snuggling_with_mama.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>In Search of Something...</b></p>
+			<p class="videoTitle" style="float:right"><b>Struggling to Share</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/rattoo_in_search_of_something.mp4" type="video/mp4">
+			</video>
+			<video controls class="video" style="float:right">
+			  <source src="videos/rattoo_struggling_to_share.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+		<div class="videoAndTitleContainer">
+		  <div>
+			<p class="videoTitle" style="float:left"><b>Returning Home</b></p>
+		  </div>
+		  <div>
+			<video controls class="video" style="float:left">
+			  <source src="videos/rattoo_returning_home.mp4" type="video/mp4">
+			</video>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+
+	<div id="Memories" class="tabcontent">
+	  <div class="tab" style="width:270px">
+		<button class="tablinks" onclick="openTab(event,'Pixel Memories')">Pixel Memories</button>
+		<button class="tablinks" onclick="openTab(event,'Norman Memories')">Norman Memories</button>
+	  </div>
+	</div>
+
+	<div id="Pixel Memories" class="tabcontent">
+	  <div class="tab" style="width:270px">
+		<button class="tablinks" onclick="openTab(event,'Pixel Memories')">Pixel Memories</button>
+		<button class="tablinks" onclick="openTab(event,'Norman Memories')">Norman Memories</button>
+	  </div>
+	  <ul>
+		<li>He would lick us all over - Deepti</li>
+		<li>He would come and butt his head to seek attention</li>
+		<li>The first day, he came and sat next to us and won us over in less than one hour - Rajat</li>
+		<li>I was so mad Ruchi was getting him (due to his age) but he became the love of my life - Niren</li>
+		<li>He would come up to each of us individually and spread his love</li>
+		<li>When he sat with Deepti and then I came, he would dump her and run to me - Niren</li>
+		<li>In the first week, we thought we lost him. However, after a lot of searching, we foud him cuddled up in a box in the nook - Rajat</li>
+		<li>He would always find new places to lay down, then get bored and find new places</li>
+		<li>He got stuck under the stairs behind the curtain in the basement and we could not find him</li>
+		<li>He would sit on bags, that we would put on the surfboard and pull like a chariot - Rajat</li>
+		<li>He would jump behind the TV and get stuck, forcing us to retrieve him</li>
+		<li>We would set up the tunnel for Norman and he would sit down on top of it</li>
+		<li>He would manipulate me to come to pet him while eating by swatting Normandy - Niren</li>
+		<li>He recognized us in the hospital and wanted to get out of his cage to come home with us</li>
+		<li>He would want to enter Ruchi's room in the morning and we would crack open the door so he could jump in bed with her</li>
+		<li>He would sit on my laptop as I worked, forcing me to pet him instead - Rajat</li>
+		<li>We would throw toys up the stairs and he would run up and knock it back down</li>
+		<li>He would play by himself in the morning sometimes run up to lower steps, roll over and make happy noises and then suddenly run super fast into the living room or his room as if he was chasing something</li>
+		<li>He did not like being in my lap... except that last day in the hospital when he let me hug him and hold him tight next to my chest. What a lovebug... always wanted to make you happy... - Niren</li>
+		<li>He would like to kill things with his right back leg as if he was going in for the attack</li>
+		<li>Sometimes he tried to bite Normy's ear but only when we were around. If were not around he always left Normy alone</li>
+		<li>He would sit on my lap in the basement chairs - Rajat</li>
+		<li>When I came home from office, he would come and greet me from wherever he was - Niren</li>
+		<li>He would sit on Rajat's chair in his room</li>
+		<li>He loved drinking water out of both taps in the upstairs bathroom</li>
+		<li>He would always clean in the sink before sitting down</li>
+		<li>He would sit and stare at you when we wanted food</li>
+		<li>He had two different meows: hungry and playful</li>
+		<li>He never ever got angry. He was very forgiving</li>
+		<li>He loved tummy rubs!</li>
+		<li>He would push away with his leg if he did not want a rub</li>
+		<li>The jingle of his collar as he walked</li>
+		<li>He would lie down in the basement and sleep in bed with me - Rajat</li>
+		<li>Whenever we were fixing anything, he would come and try to help, as if he was an expert insepecting our work</li>
+		<li>When we took him outside, he would sit next to the screen door and watch birds and animals</li>
+		<li>He would cry in the morning inside his room waiting for the door to open</li>
+		<li>As soon as the door opened, I would pet him and he would walk to the small box and scratch his front leg on the box - Niren</li>
+		<li>He loved getting rubbed by the beard and loved getting hugged in the hospital</li>
+		<li>He sat right in front of closed doors so we had to put up signs to prevent hitting him while opening them</li>
+		<li>He sat at the screen door and watched Deepti and Rajat play badminton, with his head closely following the birdie</li>
+		<li>He loved his sample carpet for his stairs</li>
+		<li>I loved kissing and hugging him as well as stroking his tail when he ate</li>
+		<li>He would come up and sit in bed with Deepti</li>
+		<li>When we slept with him in his room he was uncomfortable, he preferred his privacy</li>
+		<li>He would get up whenever anybody came in the room</li>
+		<li>He gave unconditional love to everybody</li>
+		<li>He sat and slept at the window in the sun</li>
+		<li>He loved exploring in the car, sitting up and looking out the windows and sitting in the front seat</li>
+		<li>He would come up and lie in master bed. He spent so many Saturday mornings laying in bed with Niren</li>
+		<li>In the summer, he would be desperate to go outside even though we didn't want him to</li>
+		<li>He would love to do things you did not want him to, a rebellious yet loving cat</li>
+		<li>Tummy rubs were his favorite. He would grab your arm with his front and back leg and not let go. If you pulled out your arm, he would turn up his head and look at you with a death stare until you returned your arm to him</li>
+		<li>He loved playing with rubber bands. One would throw it up high and he would catch it in his mouth</li>
+		<li>He loved playing and running on brown paper from boxes. If one threw a rubber band on it he would kick it off but not chase it outside the region of paper. He had marked it as his territory</li>
+		<li>He had such a graceful walk, like a supermodel</li>
+		<li>He loved getting covered up with blankets in the winter</li>
+		<li>Sometimes he would really love going after Norman and we would have to lock him up in his room to keep them apart. We couldn't stay mad at him though :)</li>
+		<li>He would run after us when we brought food from the kitched to his room</li>
+		<li>When Rajat was at UMass Amherst and Deepti and Ruchi were going to Cornell, Pixel had escaped through the back door to under the front steps. I was frantically running around shouting for Pixel in the yard - Niren</li>
+		<li>He loved sitting in Norman's boxes</li>
+		<li>After we would close Norman in his cage, Pixel would still think he was in the box and search for him</li>
+		<li>Normy had double-decker boxes and Pixel would sit in the top level</li>
+		<li>He was most vocal in the mornings</li>
+		<li>When he first came home, he and Normy would rub noses and love each other to get introduced</li>
+		<li>When Normy got sick, Pixel would show compassion by lying down in front his cage</li>
+		<li>He loved drinking from Normy's bowl, in alignment with his rebellious nature</li>
+		<li>He would run like a tiger with rubber bands and foil balls</li>
+		<li>He react furiously with Dr. Daria Smith by making loud noises</li>
+		<li>When we got him all kinds of expensive toys/towers, he didn't care and preferred garbage plastic bags and cardboard boxes</li>
+		<li>When we got him catnip he couldn't care less</li>
+		<li>He was a simple cat for sure...</li>
+	  </ul>
+	</div>
+
+	<div id="Norman Memories" class="tabcontent">
+	  <div class="tab" style="width:270px">
+		<button class="tablinks" onclick="openTab(event,'Pixel Memories')">Pixel Memories</button>
+		<button class="tablinks" onclick="openTab(event,'Norman Memories')">Norman Memories</button>
+	  </div>
+	  <ul>
+		<li>He used to enjoy climbing on top of his boxes, and so we had built large castles out of cardboard boxes of varying sizes</li>
+		<li>He would often rest on top of the larger box, and sometimes Pixel would come and sniff him or even try to climb up the boxes himself</li>
+		<li>Whenever we made a new box for him, he would always spend the whole day ripping it apart, making lots of noise in a playful but angry-sounding way</li>
+		<li>Norman and Pixel would sometimes play-fight each other, with Pixel often raising his hand as if preparing to slap but seldom following through</li>
+		<li>I remember when Norman was quite sick, Pixel would come and lie down outside his cage, as if expressing his concern for Norman’s health</li>
+		<li>Norman was truly a fighter! Even when hurt or tired, he would never be afraid to express his opinion by, for example, kicking Papa’s arm while being fed critical care</li>
+		<li>It was always a magical moment when Norman would decide to lick someone. I remember when he would regularly lick Mom’s face while she held him up for giving medicine and cleaning. It was like a mark of trust from Norman</li>
+		<li>He used to love going through the tunnel we had made for him and pixel but pixel would squash it when Norman was in it</li>
+		<li>I remember when we first saw him in the shelter he was so feisty. He kept running around and would let us touch him</li>
+		<li>He had a slight head tilt when we adopted him but it went away over time because of our love</li>
+		<li>I remember the people at the shelter told us how he was a very aggressive bunny and had been returned by previous adopters. They didn’t know if he would adjust with us. But he did</li>
+		<li>They told us he would not bond with another bunny so we never adopted another bunny</li>
+		<li>When normy initially came he would push us away and not let us pet him but he warmed up so much over time</li>
+		<li>When pixel would sit on Rajat’s guitar case Norman would come up to say hi ... never scared</li>
+		<li>The first and only time we took him outside on the deck he froze and developed his first bout of GI stasis</li>
+		<li>Was always curious to see pixel’s room when pixel was with us never before or after pixel. He would go up all the way to pixels door</li>
+		<li>He was a master at stretching out his full body … like he was resting on the beach</li>
+		<li>If you laid down in front of his cage at ground level and patted on the ground he would smell you and come up to you and rest himself while you rubbed his head</li>
+		<li>When you gave him meds, he would lick his lips and you could see his little tongue darting in and out as he cleaned up his lips</li>
+		<li>When he was young, he would chew up any electrical cord that came in sight--they all had to be hidden</li>
+		<li>Norman in the mornings would run under the sofa and sit there which was scary because if someone did not see him and sat on the sofa he would get hurt. We would have to give him kale to entice him out</li>
+		<li>Sometimes he would thump his back feet, it was amazing how loud it could be. Usually it was because he was scared of something and was trying to warn others or express his displeasure, we would have to calm him down</li>
+		<li>He would always know where his food came from and i don't know how but if we bought kale from anywhere other than market basket he would recognize and not eat</li>
+		<li>His way of showing that he did not like the food either because it was not from market basket or because we were late in giving it to him in the morning was to push the bowl away with his front feet showing his displeasure</li>
+		<li>He loved to lay in his litter boxes sometimes</li>
+		<li>As he got older and was unable to clean himself we gave him a butt and leg bath every 3 weeks or so and he was pretty ok with those for the most part</li>
+		<li>As he got older we had to clean his butt and his fur and sometimes when he did not like it he would kick with his back legs which were so strong even with his arthritis</li>
+		<li>When he was young he was able to jump up on boxes and heights of about a foot. As he got older none of this was possible for him. It was amazing to see the similarities of the effects of aging on him and on humans--he had arthritis, got cataracts, became less mobile</li>
+		<li>He had a healthy diet always just veggies and pellets no carrots or treats ever</li>
+		<li>He was always very affectionate and would react when you spent time with him, rubbed his head and loved him. He would lick and show his affection</li>
+		<li>When he was young he did not like being picked up but as he got older it became easier and we would pick him up and put him on our chest/tummy while we lay on our backs</li>
+		<li>I remember taking mcas one day and asking if I could make a phone call to parents to make sure they had closed young norman’s cage</li>
+		<li>Norman would dance with me when I played die antwoord, if I fell asleep while dancing he would lick me till I woke up and continued</li>
+		<li>Norman was pretty sassy, in the beginning it was hard for him to love people because of his background</li>
+		<li>Norman grew to love us and enjoyed playing and hopping</li>
+		<li>Norman loved chilling with pixel when they sat next to each other</li>
+		<li>When norman was sick, pixel knew, and would lie by his cage and vice versa</li>
+	  </ul>
+	</div>
+
+	<div id="In Memoriam" class="tabcontent">
+
+	  <div class="tabbanner">
+		<i>
+		  <h3>I hold it true, whate'er befall;</h3>
+		  <h3>I feel it, when I sorrow most;</h3>
+		  <h3>'Tis better to have loved and lost</h3>
+		  <h3>Than never to have loved at all.</h3>
+		</i>
+	  </div>
+
+	  <h1>August 11th, 2019</h1>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2019_08_11_I.jpg">
+		  <img src="images/in_memoriam_2019_08_11_I.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2019_08_11_II.jpg">
+		  <img src="images/in_memoriam_2019_08_11_II.jpg" style="width:33%">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2019_08_11_III.jpg">
+		  <img src="images/in_memoriam_2019_08_11_III.jpg" style="width:33%">
+		</a>
+	  </div>
+
+	  <h1>May 31st, 2020</h1>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2020_05_31_I.jpg">
+		  <img src="images/in_memoriam_2020_05_31_I.jpg" style="width:49.5%; float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2020_05_31_II.jpg">
+		  <img src="images/in_memoriam_2020_05_31_II.jpg" style="width:49.5%; float:right">
+		</a>
+	  </div>
+
+	  <h1>August 9th, 2020</h1>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2020_08_09.jpg">
+		  <img src="images/in_memoriam_2020_08_09.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>May 30th, 2021</h1>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_05_30.jpg">
+		  <img src="images/in_memoriam_2021_05_30.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>August 15th, 2021</h1>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_08_15.jpg">
+		  <img src="images/in_memoriam_2021_08_15.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>August 28th, 2021</h1>
+	  <h2><i>30.9 mi trek to the gravesite, in tribute to Normy</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_08_28.jpg">
+		  <img src="images/in_memoriam_2021_08_28.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>September 10th, 2021</h1>
+	  <h2><i>MSPCA "Lanterns of Remembrance"</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_10_pixel_message.jpg">
+		  <img src="images/in_memoriam_2021_09_10_pixel_message.jpg" style="width:49.5%; float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_10_norman_message.jpg">
+		  <img src="images/in_memoriam_2021_09_10_norman_message.jpg" style="width:49.5%; float:right">
+		</a>
+
+		<a target="_blank" href="images/in_memoriam_2021_09_10_pixel.jpg">
+		  <img src="images/in_memoriam_2021_09_10_pixel.jpg" style="width:49.5%; float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_10_norman.jpg">
+		  <img src="images/in_memoriam_2021_09_10_norman.jpg" style="width:49.5%; float:right">
+		</a>
+
+		<a target="_blank" href="images/in_memoriam_2021_09_10_cemetery.jpg">
+		  <img src="images/in_memoriam_2021_09_10_cemetery.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>September 19th, 2021</h1>
+	  <h2><i>Pixel's hole covered up; Normy's flowers blooming!</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_19_I.jpg">
+		  <img src="images/in_memoriam_2021_09_19_I.jpg" style="width:49.5%; float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_19_II.jpg">
+		  <img src="images/in_memoriam_2021_09_19_II.jpg" style="width:49.5%; float:right">
+		</a>
+	  </div>
+
+	  <h1>September 26th, 2021</h1>
+	  <h2><i>Normy on rainy Sunday morning...</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_26.jpg">
+		  <img src="images/in_memoriam_2021_09_26.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>September 2021</h1>
+	  <h2><i>Living room memorial built in dedication to Pixel and Norman</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_shrine.jpg">
+		  <img src="images/in_memoriam_2021_09_shrine.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h2><i>Various blankets designed in memory of Pixel and Norman</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_blanket_I.jpg">
+		  <img src="images/in_memoriam_2021_09_blanket_I.jpg" style="width:49.5%; float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_blanket_II.jpg">
+		  <img src="images/in_memoriam_2021_09_blanket_II.jpg" style="width:49.5%; float:right">
+		</a>
+	  </div>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_blanket_III.jpg">
+		  <img src="images/in_memoriam_2021_09_blanket_III.jpg" style="width:100%">
+		</a>
+	  </div>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_blanket_IV.jpg">
+		  <img src="images/in_memoriam_2021_09_blanket_IV.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h2><i>Paintings around the house</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_I.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_I.jpg" style="width:49.5%; height:calc(100vw * 0.55); float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_II.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_II.jpg" style="width:49.5%; height:calc(100vw * 0.55); float:right">
+		</a>
+	  </div>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_III.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_III.jpg" style="width:49.5%; height:calc(100vw * 0.5); float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_IV.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_IV.jpg" style="width:49.5%; height:calc(100vw * 0.5); float:right">
+		</a>
+	  </div>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_V.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_V.jpg" style="width:49.5%; float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_VI.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_VI.jpg" style="width:49.5%; float:right">
+		</a>
+	  </div>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_VII.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_VII.jpg" style="width:49.5%; float:left">
+		</a>
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_VIII.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_VIII.jpg" style="width:49.5%; float:right">
+		</a>
+	  </div>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_painting_IX.jpg">
+		  <img src="images/in_memoriam_2021_09_painting_IX.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h2><i>"Normy Smoothie" (Kale, Dandelion Greens, Lettuce, and Chicory)</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_09_smoothie.jpg">
+		  <img src="images/in_memoriam_2021_09_smoothie.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>October 3rd, 2021</h1>
+	  <h2><i>New planter for Pixel!</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2021_10_03.jpg">
+		  <img src="images/in_memoriam_2021_10_03.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>January 6th, 2022</h1>
+	  <h2><i>Norman's gravestone!</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2022_01_06.jpg">
+		  <img src="images/in_memoriam_2022_01_06.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	  <h1>April 17th, 2022</h1>
+	  <h2><i>Norman's epigraph!</i></h2>
+	  <div class="container">
+		<a target="_blank" href="images/in_memoriam_2022_04_17.jpg">
+		  <img src="images/in_memoriam_2022_04_17.jpg" style="width:100%">
+		</a>
+	  </div>
+
+	</div>
 
   </body>
-  
+
 </html>
